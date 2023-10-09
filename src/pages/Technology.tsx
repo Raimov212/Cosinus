@@ -77,7 +77,7 @@ const Technology = () => {
           return (
             <div
               key={item.id}
-              className="bg-gradient-to-r from-cyan-500 to-blue-500 p-[1px] sm:p-[1.7px] rounded-2xl sm:rounded-lg"
+              className="bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[1px] sm:p-[1.7px] rounded-2xl sm:rounded-lg"
               onClick={() => handleOpenFC(item.id)}
             >
               <>

@@ -1,4 +1,5 @@
-import TechnologyImg from "../../assets/tecnologyImg.png";
+import Lottie from "lottie-react";
+import animationData from "../../assets/animation/animation.json";
 import AnimationImg from "../../assets/animationImg.png";
 import TableAnimation from "../../assets/table-animation.png";
 
@@ -28,11 +29,10 @@ const MainTop = () => {
         </button>
       </div>
       <div className="relative flex-1 sm:h-[350px] sm:w-[350px] w-full h-full flex items-center lg:justify-center">
-        <img
-          src={TechnologyImg}
-          alt="Technology Image"
+        <Lottie
+          animationData={animationData}
           className="object-contain absolute xl:w-[500px] xl:h-[550px] xl:top-[80px] xl:right-[50px]
-           lg:w-[450px] lg:h-[500px] lg:right-30 lg:top-[50px] sm:w-[220px]  sm:right-[75px] sm:bottom-20 "
+           lg:w-[450px] lg:h-[500px] lg:right-30 lg:top-[50px] sm:w-[220px]  sm:right-[75px] sm:bottom-20"
         />
         <img
           src={AnimationImg}

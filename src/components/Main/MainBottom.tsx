@@ -55,13 +55,14 @@ const MainBottom = () => {
         {data?.map((item, index) => (
           <div key={index} className="group w-64 h-96 ">
             <div
-              className="w-64 h-96 lg:w-56 group-hover:h-96 sm:w-24 sm:group-hover:w-40 
-                bg-gradient-to-r from-cyan-500 to-blue-500 p-0.5  relative rounded-lg overflow-hidden"
+              className="w-64 h-96 lg:w-52 group-hover:h-96 sm:w-24 lg:group-hover:w-56
+                bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]  relative rounded-lg overflow-hidden"
             >
               <img
                 src={item.image}
                 className="w-full h-full group-hover:h-80  rounded-t-lg rounded-b-lg
-            group-hover:rounded-b-none object-cover transition-all ease-in-out peer:employee1"
+            group-hover:rounded-b-none object-cover transition-all ease-in-out peer:employee1
+            "
               />
               <div
                 className="hidden  group-hover:text-primary group-hover:block
