@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: { min: "320px", max: "426px" },
-        md: { min: "426px", max: "768px" },
-        lg: { min: "768px", max: "1023px" },
+        sm: { min: "320px", max: "768px" },
+        // md: { min: "426px", max: "768px" },
+        lg: { min: "768px", max: "1024px" },
         xl: { min: "1024px" },
         "2xl": "768px",
         "3xl": { min: "1023px" },

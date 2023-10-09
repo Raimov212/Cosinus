@@ -43,7 +43,7 @@ const MainBottom = () => {
           </span>
         </div>
         <div>
-          <div className="text-6xl lg:text-4xl font-extrabold text-[#3C4BDC] mb-2">
+          <div className="text-6xl text-4xl font-bold text-[#3C4BDC] mb-2">
             15+
           </div>
           <p className="text-primary xl:text-2xl lg:text-xl sm:text-lg  font-sans">

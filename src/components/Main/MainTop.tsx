@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import animationData from "../../assets/animation/animation.json";
 import AnimationImg from "../../assets/animationImg.png";
 import TableAnimation from "../../assets/table-animation.png";
+import LogoTitle from "../../assets/logo/logo-title.png";
 
 const MainTop = () => {
   return (
@@ -11,12 +12,11 @@ const MainTop = () => {
     >
       <div className="flex flex-col gap-10 sm:gap-5 flex-initial lg:pl-8 sm:px-4">
         <div>
-          <h1
-            className="text-[#36C59E] text-7xl sm:text-4xl text-transparent 
-          bg-clip-text bg-gradient-to-r font-bold from-green-300 to-blue-500"
-          >
-            Cosinus
-          </h1>
+          <img
+            src={LogoTitle}
+            alt="Logo title"
+            className="w-72 lg:w-64 sm:w-48"
+          />
           <h2 className="text-primary text-5xl sm:text-2xl font-bold">
             IT - kompaniyasi
           </h2>
@@ -31,8 +31,9 @@ const MainTop = () => {
       <div className="relative flex-1 sm:h-[350px] sm:w-[350px] w-full h-full flex items-center lg:justify-center">
         <Lottie
           animationData={animationData}
+          loop={true}
           className="object-contain 4xl:w-[1200px] 4xl:h-[1200px] 4xl:top-36 4xl:right-24 absolute xl:w-[500px] 
-           xl:h-[550px] xl:top-[30px] xl:right-[50px]
+           xl:h-[550px] xl:top-[180px] xl:right-[130px]
            lg:w-[450px] lg:h-[500px] lg:right-30 lg:top-[50px] sm:w-[220px]  sm:right-[75px] sm:bottom-20"
         />
         <img
