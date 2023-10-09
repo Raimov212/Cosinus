@@ -28,31 +28,6 @@ const MainTop = () => {
           Bog'lanish
         </button>
       </div>
-      {/* <div className="">
-        <div className="w-full h-full">
-          <Lottie
-            animationData={animationData}
-            loop={10}
-            autoplay={true}
-            className="object-contain absolute w-full h-full
-           4xl:w-[1200px] 4xl:h-[1200px] 4xl:top-36 4xl:right-24
-           xl:w-[550px] xl:h-[600px] xl:top-[280px] xl:right-[120px]
-           lg:w-[500px] lg:h-[500px] lg:right-[150px] lg:bottom-[-220px] sm:w-[230px]  
-           sm:right-[55px] sm:bottom-10"
-          />
-          <img
-            src={AnimationImg}
-            alt="Technology Image"
-            className="w-full h-full lg:hidden sm:hidden"
-          />
-          <img
-            src={TableAnimation}
-            alt="Technology Image"
-            className="xl:hidden w-full h-full relative "
-          />
-        </div>
-      </div> */}
-
       <div className="w-full h-full">
         <Lottie
           animationData={animationData}
@@ -60,7 +35,7 @@ const MainTop = () => {
           autoplay={true}
           className="object-contain absolute 
            4xl:w-[1200px] 4xl:h-[1200px] 4xl:top-36 4xl:right-24
-           xl:w-[550px] xl:h-[600px] xl:top-[280px] xl:right-[120px]
+           xl:w-[550px] xl:h-[600px] xl:top-[250px] xl:right-[100px]
            lg:w-[450px] lg:h-[500px] lg:right-36 lg:top-96
            sm:w-[230px] sm:right-[100px] sm:top-[60%] "
         />
