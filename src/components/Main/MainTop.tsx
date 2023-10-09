@@ -12,7 +12,7 @@ const MainTop = () => {
         <div>
           <h1
             className="text-[#36C59E] text-7xl sm:text-4xl text-transparent 
-          bg-clip-text bg-gradient-to-r font-extrabold from-green-300 to-blue-500"
+          bg-clip-text bg-gradient-to-r font-bold from-green-300 to-blue-500"
           >
             Cosinus
           </h1>
