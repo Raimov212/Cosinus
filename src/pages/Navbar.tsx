@@ -10,7 +10,7 @@ const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="h-10 my-4 xl:px-24 lg:px-4 sm:mb-12 sm:px-4">
+    <div className="h-10 my-4 xl:px-24 lg:px-4 sm:mb-12 sm:px-4 ">
       <div
         className={`${
           open
@@ -23,9 +23,9 @@ const Navbar = () => {
           <div
             className="transition-all ease-in-out sm:absolute md:absolute top-0
                        lg:left-0 sm:right-0 w-[80%] h-full z-50 bg-primary 
-                       py-5 px-4 flex flex-col justify-between"
+                       py-5 px-4 flex flex-col justify-between xl:hidden"
           >
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 ">
               <div className="flex items-center justify-between">
                 <img src={LogoImg} alt="cosinus" className="h-8 w-16" />
                 <div
@@ -36,20 +36,20 @@ const Navbar = () => {
                   <AiOutlineClose />
                 </div>
               </div>
-              <ul className="flex flex-col gap-5 text-secondary items-center">
-                <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[1px] rounded-md">
-                  <div className="h-full bg-primary rounded-md pl-4 pt-[6px]">
+              <ul className="flex flex-col gap-5 text-secondary items-center ">
+                <li className="w-full h-10  bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
+                  <div className="h-full bg-primary rounded-md pl-4  group-hover:bg-secondary pt-[6px]">
                     <Link to="/">Bosh sahifa</Link>
                   </div>
                 </li>
-                <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[1px] rounded-md">
-                  <div className="h-full bg-primary rounded-md pl-4 pt-[6px]">
-                    <Link to="/portfolio">Portfolio</Link>
+                <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
+                  <div className="h-full bg-primary rounded-md pl-4 pt-[6px]  group-hover:bg-secondary">
+                    <a href="#portfolio">Portfolio</a>
                   </div>
                 </li>
-                <li className="w-full h-12 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[1px] rounded-md">
-                  <div className="h-full bg-primary rounded-md pl-4 pt-[10px]">
-                    <a href="#main">Cosinus academy</a>
+                <li className="w-full h-12 bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
+                  <div className="h-full bg-primary rounded-md pl-4 pt-[10px]  group-hover:bg-secondary">
+                    <p>Cosinus academy</p>
                   </div>
                 </li>
               </ul>
@@ -110,7 +110,7 @@ const Navbar = () => {
         <button
           className={`${
             open ? "fixed top-5 right-5" : ""
-          } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden`}
+          } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block`}
         >
           Bog'lanish
         </button>

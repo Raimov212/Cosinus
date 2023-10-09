@@ -5,7 +5,8 @@ export default {
     extend: {
       screens: {
         sm: { min: "320px", max: "768px" },
-        // md: { min: "426px", max: "768px" },
+        375: "375px",
+        425: "425px",
         lg: { min: "768px", max: "1024px" },
         xl: { min: "1024px" },
         "2xl": "768px",
@@ -46,6 +47,15 @@ export default {
       textColor: {
         primary: "white",
         secondary: "rgb(212 212 212);",
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 5s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
   },

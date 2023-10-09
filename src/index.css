@@ -39,7 +39,7 @@
     border-radius: 20px;
     width: 1px;
   }
+}
 
-  /* background-image: url("./assets//bgImage.avif");
-  background-size: cover; */
+@layer utilities {
 }

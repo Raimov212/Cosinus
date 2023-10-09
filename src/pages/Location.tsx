@@ -57,10 +57,10 @@ const Location = () => {
             moslashtirilgan turli xizmatlarni taklif qilishadi.
           </div>
           <div className="overflow-x-scroll overflow-y-hidden mt-6">
-            <div className="w-full grid grid-flow-col gap-5">
+            <div className="w-full grid grid-flow-col gap-5 ">
               {data?.map((item, index) => (
                 <React.Fragment key={index}>
-                  <div className="w-72 h-32 sm:w-36 sm:h-16">
+                  <div className="w-72 h-32 sm:w-36 sm:h-16 animate-infinite-scroll">
                     <img src={item.image} alt={item.desc} />
                   </div>
                 </React.Fragment>
