@@ -7,9 +7,9 @@ export default {
         sm: { min: "320px", max: "426px" },
         md: { min: "426px", max: "768px" },
         lg: { min: "768px", max: "1023px" },
-        xl: { min: "1024px", max: "2559px" },
+        xl: { min: "1024px" },
         "2xl": "768px",
-        "3xl": "1023px",
+        "3xl": { min: "1023px" },
         "4xl": "2559px",
       },
       fontSize: {

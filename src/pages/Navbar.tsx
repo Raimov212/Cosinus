@@ -38,7 +38,7 @@ const Navbar = () => {
               </div>
               <ul className="flex flex-col gap-5 text-secondary items-center">
                 <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[1px] rounded-md">
-                  <div className="h-full bg-secondary rounded-md pl-4 pt-[6px]">
+                  <div className="h-full bg-primary rounded-md pl-4 pt-[6px]">
                     <Link to="/">Bosh sahifa</Link>
                   </div>
                 </li>

@@ -31,7 +31,8 @@ const MainTop = () => {
       <div className="relative flex-1 sm:h-[350px] sm:w-[350px] w-full h-full flex items-center lg:justify-center">
         <Lottie
           animationData={animationData}
-          className="object-contain absolute xl:w-[500px] xl:h-[550px] xl:top-[80px] xl:right-[50px]
+          className="object-contain 4xl:w-[1200px] 4xl:h-[1200px] 4xl:top-36 4xl:right-24 absolute xl:w-[500px] 
+           xl:h-[550px] xl:top-[30px] xl:right-[50px]
            lg:w-[450px] lg:h-[500px] lg:right-30 lg:top-[50px] sm:w-[220px]  sm:right-[75px] sm:bottom-20"
         />
         <img
