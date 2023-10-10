@@ -1,30 +1,28 @@
 import { useState } from "react";
-import CssImg from "../assets/technology/css.png";
-import Html from "../assets/technology/html.png";
-import Javascript from "../assets/technology/javascript.png";
-import ReactTS from "../assets/technology/reactts.png";
-import Sass from "../assets/technology/sass.png";
-import VueJS from "../assets/technology/vuejs.png";
+import CssFC from "../assets/technology/Css";
+import Html from "../assets/technology/Html";
+import Javascript from "../assets/technology/Javscript";
+import ReactTS from "../assets/technology/React";
+import Sass from "../assets/technology/Sass";
+import VueJS from "../assets/technology/Vue";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 
-interface DataTechnology {
-  title: string;
-  description?: string;
-  logo?: string[] | undefined;
-  openGroup: boolean;
-  id: string;
-}
-
 const Technology = () => {
-  const data: DataTechnology[] = [
+  const data = [
     {
       id: "1",
       openGroup: false,
       title: "Frontend",
       description:
         "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!",
-
-      logo: [CssImg, Html, Sass, Javascript, ReactTS, VueJS],
+      logo: [
+        <CssFC />,
+        <Html />,
+        <Javascript />,
+        <ReactTS />,
+        <VueJS />,
+        <Sass />,
+      ],
     },
     {
       id: "2",
@@ -99,16 +97,14 @@ const Technology = () => {
                         {item?.description}
                       </div>
                       <div className="flex transition-all ease-in-out gap-6">
-                        {item.logo?.map((lg, index) => {
-                          return (
-                            <img
-                              key={index}
-                              src={lg}
-                              alt="Technology"
-                              className="xl:w-24 xl:h-24 lg:w-16 lg:h-16 sm:w-7 sm:h-7"
-                            />
-                          );
-                        })}
+                        {item.logo?.map((item, index) => (
+                          <div
+                            key={index}
+                            className="xl:w-24 xl:h-24 lg:w-16 lg:h-16 sm:w-7 sm:h-7 flex"
+                          >
+                            {item}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>

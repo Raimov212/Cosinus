@@ -1,1 +1,37 @@
-{}
+{
+  "translation": {
+    "Navbar": {
+      "list": {
+        "one": "Bosh sahifa",
+        "two": "Portfolio",
+        "three": "Cosinus academy",
+        "new": "Yangi"
+      },
+      "call": "Bog'lanish"
+    },
+    "mainTop": {
+      "title": "IT - kompaniyasi",
+      "description": "Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.",
+      "call": "Bog'lanish"
+    },
+    "mainBottom": {
+      "title": "Bizning Jamoa",
+      "description": "Jamoa o'z sohasining ustasi bo'lgan mutahasislardan yig'ilgan. Jamoamizning har bir a'zosi loyihangizni muvafaqqiyatga yetaklaydi.",
+      "work": "Muvaffaqiyatli topshirgan ishlarimiz"
+    },
+    "services": {
+      "title": "Bizning xizmatlarimiz",
+      "description": "Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.",
+      "service": {
+        "oneTitle": "IT",
+        "oneDescription": "Mobile progmmalar, veb saytlardan tortib CRM sistemasini tizimlashtirishgacha bo'lgan sifatli xizmatlar",
+        "two": "Veb sayt",
+        "twoDescription": "Sayt dizaynini loyihalash, funksionalligini oshirish, brauzerlarda to'g'ri ishlashini taminlash va shu qator vazifalarni o'z ichiga oladi",
+        "three": "Ta'lim",
+        "threeDescription": "MIT ni mutaxasislardan o'rganing. Uzoq masofadan kelishingiz shart emas, siz shunchaki ro'yhatdan o'ting, biz oldingizga borib ilm ulashamiz",
+        "four": "Cyber sport",
+        "fourDescription": "Ommabop va adrinalinga boy bo'lgan musobaqalar"
+      }
+    }
+  }
+}

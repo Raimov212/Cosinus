@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: { min: "320px", max: "768px" },
+        sm: { min: "320px", max: "767px" },
         375: "375px",
         425: "425px",
         lg: { min: "768px", max: "1024px" },
@@ -58,13 +58,18 @@ export default {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-350%)" },
         },
+        infinitescroll: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "spin-slow-30": "spin 30s linear infinite",
         "spin-slow-25": "spin 25s linear infinite",
         "spin-slow-10": "spin 10s linear infinite",
         "marquee-infinite": "marquee 25s linear infinite",
-        "marquee2-infinite": "marquee2 25s linear infinite",
+        "marquee2-infinite": "marquee2 ",
+        "infinite-scroll": "infinitescroll ",
       },
     },
   },

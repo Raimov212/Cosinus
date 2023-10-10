@@ -2,7 +2,7 @@ import { AiFillYoutube, AiOutlineGlobal } from "react-icons/ai";
 import { BiLogoTelegram, BiSolidPhoneCall } from "react-icons/bi";
 import { CgFacebook } from "react-icons/cg";
 import { RiInstagramFill } from "react-icons/ri";
-import LogoImg from "../assets/cosinus.png";
+import { Logo } from "../assets/logo/Logo";
 
 const Footer = () => {
   return (
@@ -65,7 +65,7 @@ const Footer = () => {
       </div>
       <div className="w-full border-t-[0.5px] border-gray-300"></div>
       <div className="flex sm:flex-col sm:gap-1 justify-between items-center">
-        <img src={LogoImg} alt="cosinus" className="h-10 w-18" />
+        <Logo />
         <p className="text-secondary font-sans text-md">
           © 2023 Cosinus IT. Barcha huquqlar himoyalangan
         </p>

@@ -1,15 +1,24 @@
 import { useState } from "react";
-import LogoImg from "../assets/cosinus.png";
 import { AiFillYoutube, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { BiLogoTelegram } from "react-icons/bi";
 import { RiInstagramFill } from "react-icons/ri";
 import { CgFacebook } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { Logo } from "../assets/logo/Logo";
+import { LogoMobile } from "../assets/logo/LogoMobile";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
+
+  const {
+    t,
+    i18n: { changeLanguage, language },
+  } = useTranslation();
+
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const language = e.target.value;
+    changeLanguage(language);
     const storageLanguage = JSON.stringify(language);
     localStorage.setItem("language", storageLanguage);
   };
@@ -32,9 +41,13 @@ const Navbar = () => {
           >
             <div className="flex flex-col gap-10 ">
               <div className="flex items-center justify-between">
-                <img src={LogoImg} alt="cosinus" className="h-8 w-16" />
-                <div className="bg-gradient-to-r xl:hidden from-[#34B8A3] to-[#1913EA] p-[0.5px] md:p-[1px] rounded-md md:h-9  h-[15px]">
+                <LogoMobile />
+                <div
+                  className="bg-gradient-to-r xl:hidden from-[#34B8A3] to-[#1913EA]
+                             p-[0.5px] md:p-[1px] rounded-md md:h-9  h-[15px]"
+                >
                   <select
+                    defaultValue={language}
                     onChange={handleLanguageChange}
                     className="bg-primary w-full text-sm text-primary p-1 md:p-2 rounded-md cursor-pointer"
                   >
@@ -54,7 +67,7 @@ const Navbar = () => {
               <ul className="flex flex-col gap-5 text-secondary items-center ">
                 <li className="w-full h-10  bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
                   <div className="h-full bg-primary rounded-md pl-4  group-hover:bg-secondary pt-[6px]">
-                    <Link to="/">Bosh sahifa</Link>
+                    <Link to="/">{t("Navbar.call")}</Link>
                   </div>
                 </li>
                 <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
@@ -88,27 +101,28 @@ const Navbar = () => {
           </div>
         )}
         <div className="flex gap-10">
-          <img
-            src={LogoImg}
-            alt="cosinus"
-            className="h-10 sm:h-6 sm:w-12 w-18"
-          />
+          <div className="mr-32 sm:hidden">
+            <Logo />
+          </div>
+          <div className="mr-32 hidden sm:block">
+            <LogoMobile />
+          </div>
           <ul className="flex gap-10 text-secondary items-end lg:hidden sm:hidden">
             <li>
-              <Link to="/">Bosh sahifa</Link>
+              <Link to="/">{t("Navbar.list.one")}</Link>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio">{t("Navbar.list.two")}</a>
             </li>
             <li>
               <a href="">
                 <div className="relative">
-                  <p>Cosinus academy</p>
+                  <p>{t("Navbar.list.three")}</p>
                   <div
                     className="absolute top-[-15px] right-[-40px] bg-gradient-to-r text-secondary
                   from-violet-500 to-violet-600 rounded-t-md rounded-r-md px-[2px] text-sm"
                   >
-                    Yangi
+                    {t("Navbar.list.new")}
                   </div>
                 </div>
               </a>
@@ -133,13 +147,15 @@ const Navbar = () => {
               <option value="en">English</option>
             </select>
           </div>
-          <button
-            className={`${
-              open ? "fixed top-5 right-5" : ""
-            } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block`}
-          >
-            Bog'lanish
-          </button>
+          <a href="#call">
+            <button
+              className={`${
+                open ? "fixed top-5 right-5" : ""
+              } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block`}
+            >
+              {t("Navbar.call")}
+            </button>
+          </a>
         </div>
       </div>
     </div>

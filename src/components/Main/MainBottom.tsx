@@ -1,6 +1,8 @@
-import Employe01 from "../../assets/employee/employee01.png";
-import Employe02 from "../../assets/employee/employee02.png";
-import Employe03 from "../../assets/employee/employee03.png";
+import Employe01 from "../../assets/employee/Shoxrux CEO 1.png";
+import Employe02 from "../../assets/employee/Jamshid 2.png";
+import Employe03 from "../../assets/employee/Elbek.png";
+import Employe04 from "../../assets/employee/Muzaffar.png";
+import Employe05 from "../../assets/employee/Zamon.png";
 
 interface EmployeeData {
   image?: string;
@@ -12,33 +14,28 @@ const MainBottom = () => {
   const data: EmployeeData[] = [
     {
       image: Employe01,
-      title: "Suyunov Elbek",
+      title: "Shoxrux CEO",
       desc: "UI/UX dizayner",
     },
     {
       image: Employe02,
-      title: "Next Employee",
+      title: "Jamshid",
       desc: "Frontend Developer",
     },
     {
       image: Employe03,
-      title: "Last Employee",
+      title: "Elbek",
       desc: "Backend Developer",
     },
     {
-      image: Employe01,
-      title: "Suyunov Elbek",
+      image: Employe04,
+      title: "Muzaffar",
       desc: "UI/UX dizayner",
     },
     {
-      image: Employe02,
-      title: "Next Employee",
+      image: Employe05,
+      title: "Zamon",
       desc: "Frontend Developer",
-    },
-    {
-      image: Employe03,
-      title: "Last Employee",
-      desc: "Backend Developer",
     },
   ];
 
@@ -58,17 +55,17 @@ const MainBottom = () => {
           </span>
         </div>
         <div>
-          <h1 className="text-6xl font-bold text-[#3C4BDC] mb-2">15+</h1>
+          <p className="text-[6rem]  font-bold text-[#3C4BDC]">15+</p>
           <p className="text-primary xl:text-2xl lg:text-xl sm:text-lg  font-sans">
             Muvaffaqiyatli topshirgan ishlarimiz
           </p>
         </div>
       </div>
-      <div className="flex flex-1 gap-4 w-full overflow-hidden ">
+      <div className="flex flex-1 gap-4 overflow-hidden w-[100%] overflow-x-scroll">
         {data?.map((item, index) => (
-          <div key={index} className="group animate-marquee2-infinite">
+          <div key={index} className="group snap-center">
             <div
-              className="w-64 h-96 lg:w-52 animate-infinite-scroll sm:group-hover:w-44 sm:w-24 lg:group-hover:w-64 animate-infinite-scroll
+              className="w-64 h-96 lg:w-52 sm:group-hover:w-44 sm:w-24 lg:group-hover:w-64 
                 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]  relative rounded-lg overflow-hidden"
             >
               <img

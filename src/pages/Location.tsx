@@ -30,8 +30,8 @@ const Location = () => {
             moslashtirilgan turli xizmatlarni taklif qilishadi.
           </div>
           <div className="overflow-x-scroll overflow-y-hidden mt-6">
-            <div className="w-full grid grid-flow-col gap-14 animate-marquee-infinite">
-              <div className="w-full h-full sm:w-36 sm:h-16 animate-infinite-scroll flex items-center gap-20">
+            <div className="w-full grid grid-flow-col animate-marquee-infinite gap-14 ">
+              <div className="w-full h-full sm:w-36  sm:h-16 flex items-center gap-20">
                 <ITpark />
                 <AdrenalineRush />
                 <Group />
@@ -40,7 +40,7 @@ const Location = () => {
                 <Hilton />
                 <MuradBuilding />
               </div>
-              <div className="w-full h-full sm:w-36 sm:h-16 animate-infinite-scroll flex items-center gap-20">
+              <div className="w-full h-full sm:w-36 sm:h-16 flex items-center gap-20">
                 <ITpark />
                 <AdrenalineRush />
                 <Group />
@@ -52,7 +52,7 @@ const Location = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16" id="call">
           <div>
             <div className="xl:text-6xl lg:text-4xl sm:text-2xl text-primary ">
               Biz bilan bo’glanish
@@ -74,7 +74,7 @@ const Location = () => {
                       id="name"
                       type="text"
                       placeholder="Ism"
-                      className="text-primary p-2 bg-primary focus:outline-none focus:ring-1
+                      className="text-primary p-2 bg-primary outline-none focus:ring-1
                        focus:border-sky-500 focus:ring-sky-500 pl-3 rounded-lg w-[20rem] sm:w-full
                        placeholder:italic placeholder:text-secondary"
                     />
@@ -89,7 +89,7 @@ const Location = () => {
                       id="emil"
                       type="text"
                       placeholder="Elektron Pochtangiz"
-                      className="text-primary p-2 bg-primary focus:outline-none focus:ring-1
+                      className="text-primary p-2 bg-primary outline-none focus:ring-1
                        focus:border-sky-500 focus:ring-sky-500 pl-3 rounded-lg w-[20rem] sm:w-full
                        placeholder:italic placeholder:text-secondary"
                     />
@@ -100,13 +100,13 @@ const Location = () => {
                 <label className="text-primary text-lg">Label</label>
                 <textarea
                   placeholder="Label"
-                  className="w-full h-[7rem] text-primary p-2 bg-primary focus:outline-none
-                   focus:ring-1 focus:border-sky-500 focus:ring-sky-500 pl-3 rounded-lg 
+                  className="w-full h-[7rem] text-primary p-3 bg-primary outline-none
+                   ring-1 border-sky-500 ring-sky-500 pl-5 rounded-lg 
                     placeholder:italic placeholder:text-secondary"
                 ></textarea>
               </div>
-              <button className="w-[20rem] sm:w-full h-10 text-primary rounded-md bg-secondary">
-                Yuborish
+              <button className="w-[20rem] h-12 sm:h-8 sm:w-[12rem] text-primary rounded-md outline-none bg-secondary">
+                Xabarni yuborish
               </button>
             </div>
             <div className="flex-1 w-full flex flex-col gap-4">
