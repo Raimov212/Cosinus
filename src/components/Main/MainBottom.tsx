@@ -1,8 +1,10 @@
-import Employe01 from "../../assets/employee/Shoxrux CEO 1.png";
-import Employe02 from "../../assets/employee/Jamshid 2.png";
+import Employe01 from "../../assets/employee/ShoxruxCEO.png";
+import Employe02 from "../../assets/employee/Jamshid.png";
 import Employe03 from "../../assets/employee/Elbek.png";
 import Employe04 from "../../assets/employee/Muzaffar.png";
 import Employe05 from "../../assets/employee/Zamon.png";
+import Employe06 from "../../assets/employee/Tolib.png";
+import { useTranslation } from "react-i18next";
 
 interface EmployeeData {
   image?: string;
@@ -11,21 +13,23 @@ interface EmployeeData {
 }
 
 const MainBottom = () => {
+  const { t } = useTranslation();
+
   const data: EmployeeData[] = [
     {
       image: Employe01,
       title: "Shoxrux CEO",
-      desc: "UI/UX dizayner",
+      desc: "CEO OPTIMIZATION",
     },
     {
       image: Employe02,
       title: "Jamshid",
-      desc: "Frontend Developer",
+      desc: "JAVA BACKEND DEVELOPER",
     },
     {
       image: Employe03,
       title: "Elbek",
-      desc: "Backend Developer",
+      desc: "UI/IX DESIGNER",
     },
     {
       image: Employe04,
@@ -35,7 +39,12 @@ const MainBottom = () => {
     {
       image: Employe05,
       title: "Zamon",
-      desc: "Frontend Developer",
+      desc: "DART FLUTTER DEVELOPER",
+    },
+    {
+      image: Employe06,
+      title: "Tolib",
+      desc: "COPIRAYTER",
     },
   ];
 
@@ -47,17 +56,16 @@ const MainBottom = () => {
       <div className="w-full flex flex-1 flex-col gap-10 sm:gap-2 lg:mb-10 sm:mb-10">
         <div className="xl:w-[500px]">
           <h1 className="text-primary text-6xl sm:text-2xl font-bold">
-            Bizning Jamoa
+            {t("mainBottom.title")}
           </h1>
           <span className="text-secondary xl:text-xl font-sans">
-            Jamoa o'z sohasining ustasi bo'lgan mutahasislardan yig'ilgan.
-            Jamoamizning har bir a'zosi loyihangizni muvafaqqiyatga yetaklaydi.
+            {t("mainBottom.description")}
           </span>
         </div>
         <div>
           <p className="text-[6rem]  font-bold text-[#3C4BDC]">15+</p>
           <p className="text-primary xl:text-2xl lg:text-xl sm:text-lg  font-sans">
-            Muvaffaqiyatli topshirgan ishlarimiz
+            {t("mainBottom.work")}
           </p>
         </div>
       </div>

@@ -6,15 +6,17 @@ import ReactTS from "../assets/technology/React";
 import Sass from "../assets/technology/Sass";
 import VueJS from "../assets/technology/Vue";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const Technology = () => {
+  const { t } = useTranslation();
+
   const data = [
     {
       id: "1",
       openGroup: false,
       title: "Frontend",
-      description:
-        "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!",
+      description: t("technology.frontend"),
       logo: [
         <CssFC />,
         <Html />,
@@ -62,12 +64,10 @@ const Technology = () => {
     <div className="xl:px-24 lg:px-6 sm:mb-12 sm:px-4">
       <div className="mt-24 mb-14 sm:mt-0 sm:mb-8">
         <div className="text-6xl lg:text-4xl sm:text-xl text-primary mb-6 sm:mb-2 ">
-          Loyihangizni muammosiz bajarish uchun eng yangi texnologiyalardan
-          foydalanamiz
+          {t("technology.title")}
         </div>
         <div className="text-2xl sm:text-[12px] text-secondary ">
-          IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga
-          moslashtirilgan turli xizmatlarni taklif qilishadi.
+          {t("technology.description")}
         </div>
       </div>
       <div className="w-full flex flex-col gap-6 ">

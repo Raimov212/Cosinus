@@ -2,6 +2,7 @@ import Lottie, { InteractivityProps } from "lottie-react";
 import animationData from "../../assets/animation/animation.json";
 import { LogoTitle } from "../../assets/logo/LogoTitle";
 import { LogoTitleMobile } from "../../assets/logo/LogoTitleMobile";
+import { useTranslation } from "react-i18next";
 
 const MainTop = () => {
   const interactivity: Omit<InteractivityProps, "lottieObj"> = {
@@ -14,6 +15,8 @@ const MainTop = () => {
       },
     ],
   };
+
+  const { t } = useTranslation();
 
   return (
     <div
@@ -29,15 +32,15 @@ const MainTop = () => {
             <LogoTitleMobile />
           </div>
           <h2 className="text-primary text-5xl sm:text-2xl font-bold">
-            IT - kompaniyasi
+            {t("mainTop.title")}
           </h2>
         </div>
         <span className="xl:w-[550px] text-3xl sm:text-base font-sans text-secondary">
-          Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.
+          {t("mainTop.description")}
         </span>
         <a href="#call">
           <button className="bg-secondary p-2 rounded-md text-primary w-64 md:w-64 sm:w-full">
-            Bog'lanish
+            {t("mainTop.call")}
           </button>
         </a>
       </div>

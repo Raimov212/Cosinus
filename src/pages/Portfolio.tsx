@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import PortFolioImg from "../assets/porfolio.png";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -7,30 +8,32 @@ interface PortfolioData {
 }
 
 const Portfolio = () => {
+  const { t } = useTranslation();
+
   const data: PortfolioData[] = [
     {
       image: PortFolioImg,
-      description: "Cosinus IT-kompaniyasi uchun veb-sayt dizayni",
+      description: t("portfolio.designName"),
     },
     {
       image: PortFolioImg,
-      description: "Cosinus IT-kompaniyasi uchun veb-sayt dizayni",
+      description: t("portfolio.designName"),
     },
     {
       image: PortFolioImg,
-      description: "Cosinus IT-kompaniyasi uchun veb-sayt dizayni",
+      description: t("portfolio.designName"),
     },
     {
       image: PortFolioImg,
-      description: "Cosinus IT-kompaniyasi uchun veb-sayt dizayni",
+      description: t("portfolio.designName"),
     },
     {
       image: PortFolioImg,
-      description: "Cosinus IT-kompaniyasi uchun veb-sayt dizayni",
+      description: t("portfolio.designName"),
     },
     {
       image: PortFolioImg,
-      description: "Cosinus IT-kompaniyasi uchun veb-sayt dizayni",
+      description: t("portfolio.designName"),
     },
   ];
 
@@ -41,10 +44,10 @@ const Portfolio = () => {
     >
       <div className="mt-24 mb-14 xl:w-[110vh] sm:mt-0 sm:mb-6">
         <div className="xl:text-6xl lg:text-4xl sm:text-2xl text-primary">
-          PORTFOLIO
+          {t("portfolio.title")}
         </div>
         <div className="text-2xl text-secondary sm:text-sm">
-          Biz bilan zamon bilan hamnafas bo'ling
+          {t("portfolio.description")}
         </div>
       </div>
       <div className="grid place-items-center">
@@ -68,7 +71,7 @@ const Portfolio = () => {
           ))}
         </div>
         <div className="cursor-pointer flex justify-center items-center gap-4 text-primary w-72 h-12 sm:w-full sm:h-9 sm:mt-4 bg-secondary">
-          <button>Barchasini ochish </button>
+          <button>{t("portfolio.button")}</button>
           <div className="text-xl">
             <FiArrowUpRight />
           </div>

@@ -4,37 +4,36 @@ import Auditory from "../assets/work-logo/auditory1.png";
 import Strategy from "../assets/work-logo/strategy.png";
 import Development from "../assets/work-logo/development1.png";
 import Partners from "../assets/work-logo/partners1.png";
+import { useTranslation } from "react-i18next";
 
 const WorkCategory = () => {
+  const { t } = useTranslation();
+
   const data = [
     {
       image: Brain,
-      title: "Tahlil va g'oya",
-      description:
-        "Ushbu bo'limda raqobatchilar tahlil qilinadi, bozor o'rganiladi. Va proektning dastlabki g'oylari paydo bo'ladi",
+      title: t("workCategory.description"),
+      description: t("workCategory.description"),
     },
     {
       image: Auditory,
-      title: "Auditoriya",
-      description:
-        "Maqsadli auditoriya tanlanadi, talablari o'rganilib, ularning ehtiyoji aniqlanadi",
+      title: t("workCategory.description"),
+      description: t("workCategory.description"),
     },
     {
       image: Strategy,
-      title: "Strategiya",
-      description:
-        "Qilinishi kerak bo'lgan ishlar aniqlanadi, ularning ketma-ketiligi tuzib olinadi yani reja tuziladi",
+      title: t("workCategory.description"),
+      description: t("workCategory.description"),
     },
     {
       image: Development,
-      title: "Rivojlanish",
-      description:
-        "Reja asosida qilinishi kerak bo'lgan ishlar qilinadi va proekt muvaqqiyatli tugashi uchun sirli fishkalardan foydalniladi",
+      title: t("workCategory.description"),
+      description: t("workCategory.description"),
     },
     {
       image: Partners,
-      title: "Hamkorlarimiz",
-      description: "Bizga bildirgan ishonchingiz uchun tashakkur!",
+      title: t("workCategory.description"),
+      description: t("workCategory.description"),
     },
   ];
 
@@ -42,11 +41,10 @@ const WorkCategory = () => {
     <div className="xl:px-24 lg:px-6 pb-14 bg-[#081264] sm:mb-12 sm:px-4">
       <div className="my-14 sm:my-8 xl:w-[110vh]">
         <div className="xl:text-6xl lg:text-4xl sm:text-2xl text-primary mb-6 sm:mb-2">
-          Biz qanday ishlaymiz
+          {t("workCategory.title")}
         </div>
         <div className="text-2xl text-secondary sm:text-sm ">
-          IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga
-          moslashtirilgan turli xizmatlarni taklif qilishadi.
+          {t("workCategory.description")}
         </div>
       </div>
       <div className="grid xl:grid-cols-3 xl:grid lg:grid-cols-2 md:grid-cols-1 gap-10 ">

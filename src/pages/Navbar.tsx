@@ -67,7 +67,7 @@ const Navbar = () => {
               <ul className="flex flex-col gap-5 text-secondary items-center ">
                 <li className="w-full h-10  bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
                   <div className="h-full bg-primary rounded-md pl-4  group-hover:bg-secondary pt-[6px]">
-                    <Link to="/">{t("Navbar.call")}</Link>
+                    <Link to="/">{t("navbar.call")}</Link>
                   </div>
                 </li>
                 <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
@@ -109,20 +109,20 @@ const Navbar = () => {
           </div>
           <ul className="flex gap-10 text-secondary items-end lg:hidden sm:hidden">
             <li>
-              <Link to="/">{t("Navbar.list.one")}</Link>
+              <Link to="/">{t("navbar.list.one")}</Link>
             </li>
             <li>
-              <a href="#portfolio">{t("Navbar.list.two")}</a>
+              <a href="#portfolio">{t("navbar.list.two")}</a>
             </li>
             <li>
               <a href="">
                 <div className="relative">
-                  <p>{t("Navbar.list.three")}</p>
+                  <p>{t("navbar.list.three")}</p>
                   <div
                     className="absolute top-[-15px] right-[-40px] bg-gradient-to-r text-secondary
                   from-violet-500 to-violet-600 rounded-t-md rounded-r-md px-[2px] text-sm"
                   >
-                    {t("Navbar.list.new")}
+                    {t("navbar.list.new")}
                   </div>
                 </div>
               </a>
@@ -153,7 +153,7 @@ const Navbar = () => {
                 open ? "fixed top-5 right-5" : ""
               } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block`}
             >
-              {t("Navbar.call")}
+              {t("navbar.call")}
             </button>
           </a>
         </div>

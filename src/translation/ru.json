@@ -1,6 +1,6 @@
 {
   "translation": {
-    "Navbar": {
+    "navbar": {
       "list": {
         "one": "Bosh sahifa",
         "two": "Portfolio",
@@ -32,6 +32,63 @@
         "four": "Cyber sport",
         "fourDescription": "Ommabop va adrinalinga boy bo'lgan musobaqalar"
       }
+    },
+    "technology": {
+      "title": "Loyihangizni muammosiz bajarish uchun eng yangi texnologiyalardan foydalanamiz",
+      "description": "Biz bilan zamon bilan hamnafas bo'ling",
+      "frontend": "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!"
+    },
+    "portfolio": {
+      "title": "PORTFOLIO",
+      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
+      "designName": "Cosimus IT-konpaniyasi uchun veb-sayt dizayni",
+      "button": "Barchasini ochish"
+    },
+    "workCategory": {
+      "title": "Biz qanday ishlaymiz",
+      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
+      "one": {
+        "categoryTitle": "Tahlil va g'oya",
+        "description": "Ushbu bo'limda raqobatchilar tahlil qilinadi, bozor o'rganiladi. Va proektning dastlabki g'oylari paydo bo'ladi"
+      },
+      "two": {
+        "categoryTitle": "Auditoriya",
+        "description": "Maqsadli auditoriya tanlanadi, talablari o'rganilib, ularning ehtiyoji aniqlanadi"
+      },
+      "three": {
+        "categoryTitle": "Strategiya",
+        "description": "Qilinishi kerak bo'lgan ishlar aniqlanadi, ularning ketma-ketiligi tuzib olinadi yani reja tuziladi"
+      },
+      "four": {
+        "categoryTitle": "Rivojlanish",
+        "description": "Reja asosida qilinishi kerak bo'lgan ishlar qilinadi va proekt muvaqqiyatli tugashi uchun sirli fishkalardan foydalniladi"
+      },
+      "five": {
+        "categoryTitle": "Hamkorlarimiz",
+        "description": "Bizga bildirgan ishonchingiz uchun tashakkur!"
+      }
+    },
+    "company": {
+      "title": "Bizga ishonch bildirgan kompaniyalar:",
+      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi."
+    },
+    "call": {
+      "title": "Biz bilan bo’glanish",
+      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
+      "inputName": "Ismingiz",
+      "inputPlaceholder": "Ismingiz",
+      "email": "Elekrton pochtangiz",
+      "descriptionName": "Label",
+      "locatoin": "Tashkent, Mirzo-Ulugbekskiy tumani, mahalla Shaxriobod",
+      "button": "Xabar yuborish"
+    },
+    "footer": {
+      "serviceTitle": "Bizning xizmatlarimiz",
+      "serviceWork": "Veb saytlar",
+      "portfolioTitle": "Portfolio",
+      "portfolioWork": "Cosimus IT-konpaniyasi",
+      "callTitle": "Bog‘lanish",
+      "certificat": "© 2023 Cosinus IT. Barcha huquqlar himoyalangan"
     }
   }
 }
