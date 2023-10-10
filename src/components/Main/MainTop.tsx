@@ -46,7 +46,7 @@ const MainTop = () => {
           action="scroll"
           className="object-contain absolute
          4xl:w-[1200px] 4xl:h-[1200px] 4xl:top-36 4xl:right-24
-         xl:w-[450px] xl:h-[600px] xl:top-[150px] xl:right-[80px]
+         xl:w-[500px] xl:h-[600px] xl:top-[150px] xl:right-[80px]
          lg:w-[450px] lg:h-[500px] lg:right-36 lg:top-96
          sm:w-[230px] sm:right-[100px] sm:top-[60%]"
         />
