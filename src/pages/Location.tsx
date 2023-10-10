@@ -1,11 +1,13 @@
 import { YMaps, Map } from "@pbe/react-yandex-maps";
 
-//Company Image
-import ItPark from "../assets/company/ItPark.png";
-import SamAuto from "../assets/company/SamAuto.png";
-import AdrenalineRush from "../assets/company/AdrenalineRush.png";
-import GoldenHouse from "../assets/company/GoldenHouse.png";
-import LastImg from "../assets/company/LastImg.png";
+//Company Logo
+import { ITpark } from "../assets/company/ITpark";
+import { Group } from "../assets/company/Group";
+import { AdrenalineRush } from "../assets/company/AdrenalineRush";
+import { GoldenHouse } from "../assets/company/GoldenHouse";
+import { Ung } from "../assets/company/Ung";
+import { Hilton } from "../assets/company/Hilton";
+import { MuradBuilding } from "../assets/company/MuradBuilding";
 //Icons
 import { IoLocationSharp } from "react-icons/io5";
 import { HiMiniPhone } from "react-icons/hi2";
@@ -14,37 +16,8 @@ import { BiLogoTelegram } from "react-icons/bi";
 import { RiInstagramFill } from "react-icons/ri";
 import { AiFillYoutube } from "react-icons/ai";
 import { CgFacebook } from "react-icons/cg";
-import React from "react";
-
-interface ImgData {
-  image: string;
-  desc: string;
-}
 
 const Location = () => {
-  const data: ImgData[] = [
-    {
-      image: ItPark,
-      desc: "It Park",
-    },
-    {
-      image: SamAuto,
-      desc: "Sam Auto",
-    },
-    {
-      image: AdrenalineRush,
-      desc: "Adrenaline Rush",
-    },
-    {
-      image: GoldenHouse,
-      desc: "Golden House",
-    },
-    {
-      image: LastImg,
-      desc: "Last Img",
-    },
-  ];
-
   return (
     <div className="xl:px-24 lg:px-6 mb-14 sm:mb-12 sm:px-4 ">
       <div className="mt-24 mb-14 sm:mt-0 sm:mb-0 w-full flex flex-col gap-10">
@@ -57,14 +30,25 @@ const Location = () => {
             moslashtirilgan turli xizmatlarni taklif qilishadi.
           </div>
           <div className="overflow-x-scroll overflow-y-hidden mt-6">
-            <div className="w-full grid grid-flow-col gap-5 ">
-              {data?.map((item, index) => (
-                <React.Fragment key={index}>
-                  <div className="w-72 h-32 sm:w-36 sm:h-16 animate-infinite-scroll">
-                    <img src={item.image} alt={item.desc} />
-                  </div>
-                </React.Fragment>
-              ))}
+            <div className="w-full grid grid-flow-col gap-14 animate-marquee-infinite">
+              <div className="w-full h-full sm:w-36 sm:h-16 animate-infinite-scroll flex items-center gap-20">
+                <ITpark />
+                <AdrenalineRush />
+                <Group />
+                <GoldenHouse />
+                <Ung />
+                <Hilton />
+                <MuradBuilding />
+              </div>
+              <div className="w-full h-full sm:w-36 sm:h-16 animate-infinite-scroll flex items-center gap-20">
+                <ITpark />
+                <AdrenalineRush />
+                <Group />
+                <GoldenHouse />
+                <Ung />
+                <Hilton />
+                <MuradBuilding />
+              </div>
             </div>
           </div>
         </div>
@@ -158,7 +142,7 @@ const Location = () => {
               </div>
             </div>
           </div>
-          <div className="w-full bg-gradient-to-r from-cyan-500 to-secondary">
+          <div className="w-[90%] bg-gradient-to-r from-cyan-500 to-secondary ">
             <YMaps>
               <Map
                 defaultState={{ center: [41.322569, 69.234605], zoom: 15 }}

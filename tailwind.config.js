@@ -48,14 +48,23 @@ export default {
         primary: "white",
         secondary: "rgb(212 212 212);",
       },
-      animation: {
-        "infinite-scroll": "infinite-scroll 5s linear infinite",
-      },
+
       keyframes: {
-        "infinite-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-130%)" },
         },
+        marquee2: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-350%)" },
+        },
+      },
+      animation: {
+        "spin-slow-30": "spin 30s linear infinite",
+        "spin-slow-25": "spin 25s linear infinite",
+        "spin-slow-10": "spin 10s linear infinite",
+        "marquee-infinite": "marquee 25s linear infinite",
+        "marquee2-infinite": "marquee2 25s linear infinite",
       },
     },
   },

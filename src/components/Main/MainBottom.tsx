@@ -25,6 +25,21 @@ const MainBottom = () => {
       title: "Last Employee",
       desc: "Backend Developer",
     },
+    {
+      image: Employe01,
+      title: "Suyunov Elbek",
+      desc: "UI/UX dizayner",
+    },
+    {
+      image: Employe02,
+      title: "Next Employee",
+      desc: "Frontend Developer",
+    },
+    {
+      image: Employe03,
+      title: "Last Employee",
+      desc: "Backend Developer",
+    },
   ];
 
   return (
@@ -49,11 +64,11 @@ const MainBottom = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-1 gap-4 w-full overflow-hidden">
+      <div className="flex flex-1 gap-4 w-full overflow-hidden ">
         {data?.map((item, index) => (
-          <div key={index} className="group ">
+          <div key={index} className="group animate-marquee2-infinite">
             <div
-              className="w-64 h-96 lg:w-52  sm:group-hover:w-44 sm:w-24 lg:group-hover:w-64 animate-infinite-scroll
+              className="w-64 h-96 lg:w-52 animate-infinite-scroll sm:group-hover:w-44 sm:w-24 lg:group-hover:w-64 animate-infinite-scroll
                 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]  relative rounded-lg overflow-hidden"
             >
               <img

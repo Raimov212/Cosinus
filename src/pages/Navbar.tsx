@@ -8,6 +8,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const language = e.target.value;
+    const storageLanguage = JSON.stringify(language);
+    localStorage.setItem("language", storageLanguage);
+  };
 
   return (
     <div className="h-10 my-4 xl:px-24 lg:px-4 sm:mb-12 sm:px-4 ">
@@ -107,13 +112,25 @@ const Navbar = () => {
         >
           <AiOutlineMenu />
         </div>
-        <button
-          className={`${
-            open ? "fixed top-5 right-5" : ""
-          } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block`}
-        >
-          Bog'lanish
-        </button>
+        <div className="flex gap-5">
+          <div className="bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px] rounded-md  h-10">
+            <select
+              onChange={handleLanguageChange}
+              className="bg-primary w-full  text-primary p-2 rounded-md cursor-pointer"
+            >
+              <option value="uz">O'zbek</option>
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <button
+            className={`${
+              open ? "fixed top-5 right-5" : ""
+            } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block`}
+          >
+            Bog'lanish
+          </button>
+        </div>
       </div>
     </div>
   );

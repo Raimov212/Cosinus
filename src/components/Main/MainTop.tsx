@@ -1,10 +1,21 @@
-import Lottie from "lottie-react";
+import Lottie, { InteractivityProps } from "lottie-react";
 import animationData from "../../assets/animation/animation.json";
 import AnimationImg from "../../assets/animationImg.png";
 import TableAnimation from "../../assets/table-animation.png";
 import LogoTitle from "../../assets/logo/logo-title.png";
 
 const MainTop = () => {
+  const interactivity: Omit<InteractivityProps, "lottieObj"> = {
+    mode: "scroll",
+    actions: [
+      {
+        visibility: [0.15, 1.0],
+        type: "loop",
+        frames: [5, 260],
+      },
+    ],
+  };
+
   return (
     <div
       className="w-full h-full flex lg:flex-col sm:flex-col xl:items-center
@@ -31,13 +42,13 @@ const MainTop = () => {
       <div className="w-full h-full">
         <Lottie
           animationData={animationData}
-          loop={10}
-          autoplay={true}
-          className="object-contain absolute 
-           4xl:w-[1200px] 4xl:h-[1200px] 4xl:top-36 4xl:right-24
-           xl:w-[550px] xl:h-[600px] xl:top-[250px] xl:right-[100px]
-           lg:w-[450px] lg:h-[500px] lg:right-36 lg:top-96
-           sm:w-[230px] sm:right-[100px] sm:top-[60%] "
+          interactivity={interactivity}
+          action="scroll"
+          className="object-contain absolute
+         4xl:w-[1200px] 4xl:h-[1200px] 4xl:top-36 4xl:right-24
+         xl:w-[550px] xl:h-[600px] xl:top-[250px] xl:right-[100px]
+         lg:w-[450px] lg:h-[500px] lg:right-36 lg:top-96
+         sm:w-[230px] sm:right-[100px] sm:top-[60%]"
         />
         <img
           src={AnimationImg}

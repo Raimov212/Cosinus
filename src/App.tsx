@@ -11,7 +11,7 @@ import HeaderComponent from "./components/Header/HeaderComponent";
 function App() {
   return (
     <BrowserRouter>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden h-full w-full">
         <Navbar />
         <Routes>
           <Route path="/" index element={<HeaderComponent />} />
