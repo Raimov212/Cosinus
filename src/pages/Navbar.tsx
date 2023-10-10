@@ -33,6 +33,16 @@ const Navbar = () => {
             <div className="flex flex-col gap-10 ">
               <div className="flex items-center justify-between">
                 <img src={LogoImg} alt="cosinus" className="h-8 w-16" />
+                <div className="bg-gradient-to-r xl:hidden from-[#34B8A3] to-[#1913EA] p-[0.5px] md:p-[1px] rounded-md md:h-9  h-[15px]">
+                  <select
+                    onChange={handleLanguageChange}
+                    className="bg-primary w-full text-sm text-primary p-1 md:p-2 rounded-md cursor-pointer"
+                  >
+                    <option value="uz">O'zbek</option>
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
                 <div
                   className="xl:hidden w-10 h-10 flex justify-center items-center
                    rounded-md  text-primary text-xl"
@@ -112,8 +122,8 @@ const Navbar = () => {
         >
           <AiOutlineMenu />
         </div>
-        <div className="flex gap-5">
-          <div className="bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px] rounded-md  h-10">
+        <div className="flex gap-5 sm:fixed sm:top-5 sm:right-5">
+          <div className="bg-gradient-to-r xl:block sm:hidden md:hidden from-[#34B8A3] to-[#1913EA] p-[2px] rounded-md  h-10">
             <select
               onChange={handleLanguageChange}
               className="bg-primary w-full  text-primary p-2 rounded-md cursor-pointer"
