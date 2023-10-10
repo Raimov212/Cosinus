@@ -123,7 +123,7 @@ const Navbar = () => {
           <AiOutlineMenu />
         </div>
         <div className="flex gap-5 sm:fixed sm:top-5 sm:right-5">
-          <div className="bg-gradient-to-r xl:block sm:hidden md:hidden from-[#34B8A3] to-[#1913EA] p-[2px] rounded-md  h-10">
+          <div className="bg-gradient-to-r xl:block sm:hidden md:hidden from-[#34B8A3] to-[#1913EA] p-[2px] sm:p-[2px] rounded-md  h-10">
             <select
               onChange={handleLanguageChange}
               className="bg-primary w-full  text-primary p-2 rounded-md cursor-pointer"

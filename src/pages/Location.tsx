@@ -142,7 +142,7 @@ const Location = () => {
               </div>
             </div>
           </div>
-          <div className="w-[90%] bg-gradient-to-r from-cyan-500 to-secondary ">
+          <div className="w-full bg-gradient-to-r from-cyan-500 to-secondary ">
             <YMaps>
               <Map
                 defaultState={{ center: [41.322569, 69.234605], zoom: 15 }}
