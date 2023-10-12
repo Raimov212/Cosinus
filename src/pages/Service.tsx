@@ -23,7 +23,7 @@ const Service = () => {
   ];
 
   return (
-    <div className="w-full h-full xl:px-24 lg:px-8 bg-[#081264] py-12 sm:mb-12 sm:px-4">
+    <div className="w-full h-full xl:px-24 lg:px-8 bg-[#081264] py-12 sm:mb-12 sm:px-4 ">
       <div className="md:px-12">
         <div className="text-primary xl:text-6xl lg:text-4xl md:text-4xl sm:text-2xl ">
           {t("services.title")}

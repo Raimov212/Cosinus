@@ -69,9 +69,9 @@ const MainBottom = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-1 gap-4 overflow-hidden w-[100%] overflow-x-scroll">
+      <div className="flex flex-1 gap-4 overflow-hidden overflow-x-scroll">
         {data?.map((item, index) => (
-          <div key={index} className="snap-center h-full">
+          <div key={index} className="h-full w-full animate-marquee2-infinite">
             <div
               className="w-64 h-96 sm:h-[24rem] lg:w-52 sm:w-64 
                 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]

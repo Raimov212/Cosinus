@@ -50,12 +50,12 @@ export default {
 
       keyframes: {
         marquee: {
-          "0%": { transform: "translateX(0%)" },
+          "0%": { transform: "translateX(10%)" },
           "100%": { transform: "translateX(-100%)" },
         },
         marquee2: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-350%)" },
+          "0%": { transform: "translateX(50%)" },
+          "100%": { transform: "translateX(-400%)" },
         },
         infinitescroll: {
           from: { transform: "translateX(0)" },
@@ -67,7 +67,7 @@ export default {
         "spin-slow-25": "spin 25s linear infinite",
         "spin-slow-10": "spin 10s linear infinite",
         "marquee-infinite": "marquee 25s linear infinite",
-        "marquee2-infinite": "marquee2 ",
+        "marquee2-infinite": "marquee2 25s linear infinite",
         "infinite-scroll": "infinitescroll ",
       },
     },

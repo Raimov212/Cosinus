@@ -7,6 +7,7 @@ import Service from "./pages/Service";
 import Technology from "./pages/Technology";
 import WorkCategory from "./pages/WorkCategory";
 import HeaderComponent from "./components/Header/HeaderComponent";
+// import Test from "./pages/test";
 
 function App() {
   return (
@@ -16,11 +17,12 @@ function App() {
         <div className="overflow-hidden">
           <Routes>
             <Route path="/" index element={<HeaderComponent />} />
-            <Route path="/portfolio" index element={<Portfolio />} />
-            <Route path="/location" index element={<Location />} />
-            <Route path="/Service" index element={<Service />} />
-            <Route path="/technology" index element={<Technology />} />
-            <Route path="/work-category" index element={<WorkCategory />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            {/* <Route path="/test" element={<Test />} /> */}
+            <Route path="/location" element={<Location />} />
+            <Route path="/Service" element={<Service />} />
+            <Route path="/technology" element={<Technology />} />
+            <Route path="/work-category" element={<WorkCategory />} />
           </Routes>
           <Footer />
         </div>

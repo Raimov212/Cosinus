@@ -29,7 +29,7 @@ const Navbar = () => {
       <div
         className={`${
           open
-            ? "xl:hidden bg-white opacity-30 absolute top-0 left-0 w-full h-full navbar"
+            ? "xl:hidden md:hidden bg-white opacity-30 absolute top-[-30px] left-0 w-full h-[1000px] "
             : null
         }`}
       ></div>
@@ -39,7 +39,7 @@ const Navbar = () => {
       >
         {open ? (
           <div
-            className="transition-all ease-in-out absolute  top-[-20px] mt-2
+            className="transition-all ease-in-out absolute  top-[-25px] mt-2
             lg:left-0 md:left-0 sm:right-0 w-[80%] bg-primary pb-[50rem]
             py-5 px-4 flex flex-col justify-between xl:hidden h-full opacity-100"
           >
@@ -55,13 +55,13 @@ const Navbar = () => {
                   <AiOutlineClose />
                 </div>
               </div>
-              <ul className="flex flex-col gap-5 text-secondary items-center ">
+              <ul className="flex flex-col gap-5 text-secondary ">
                 <li className="w-full h-10  bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
-                  <Link to="/">
+                  <a href="/">
                     <div className="h-full bg-primary rounded-md pl-4 group-hover:bg-secondary pt-[6px]">
-                      <p className="">{t("navbar.call")}</p>
+                      <p className="">{t("navbar.list.one")}</p>
                     </div>
-                  </Link>
+                  </a>
                 </li>
                 <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
                   <a href="#portfolio">
@@ -75,6 +75,28 @@ const Navbar = () => {
                     <p>Cosinus academy</p>
                   </div>
                 </li>
+                <li className="w-full hidden sm:block lg:block h-10  bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
+                  <a href="#call">
+                    <div className="h-full bg-primary rounded-md pl-4 group-hover:bg-secondary pt-[6px]">
+                      <p className="">{t("navbar.call")}</p>
+                    </div>
+                  </a>
+                </li>
+                <div
+                  className="bg-gradient-to-r hidden w-24 sm:block xl:h-full xl:w-full from-[#34B8A3] to-[#1913EA]
+            md:p-[0.8px] p-[1px]  rounded-md mr-1"
+                >
+                  <select
+                    defaultValue={language}
+                    onChange={handleLanguageChange}
+                    className="bg-primary w-full text-sm text-primary p-2 sm:p-[6px]
+                 rounded-md cursor-pointer xl:h-10"
+                  >
+                    <option value="uz">O'zbek</option>
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
               </ul>
             </div>
             <div className="flex gap-6 text-[#3C4BDC] text-3xl sm:text-2xl justify-center mt-[20rem]">
@@ -128,7 +150,7 @@ const Navbar = () => {
           <div className="flex xl:gap-8 items-center">
             <div
               className="bg-gradient-to-r xl:h-full xl:w-full from-[#34B8A3] to-[#1913EA]
-            md:p-[0.8px] sm:p-[1px] rounded-md mr-1"
+            md:p-[0.8px] p-[1px]  rounded-md mr-1"
             >
               <select
                 defaultValue={language}

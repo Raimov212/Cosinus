@@ -22,7 +22,7 @@ const Location = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="  mb-14 sm:mb-12  ">
+    <div id="call" className="mb-14 sm:mb-12 ">
       <div className="mt-24 mb-14 sm:mt-0 sm:mb-0 w-full flex flex-col gap-10">
         <div>
           <div className="md:px-12 xl:px-24 lg:px-6 sm:px-4  ">
@@ -139,9 +139,12 @@ const Location = () => {
                 <div className="text-[#3C4BDC] text-3xl sm:text-2xl">
                   <HiMiniPhone />
                 </div>
-                <span className="text-primary text-xl sm:text-base">
+                <a
+                  href="tel:+998981003631"
+                  className="text-primary text-xl sm:text-base"
+                >
                   +998 98 100 36 31
-                </span>
+                </a>
               </div>
               <div className="flex gap-2 w-[25rem]">
                 <div className="text-[#3C4BDC] text-3xl sm:text-2xl">
@@ -170,7 +173,7 @@ const Location = () => {
           <div className="w-full bg-gradient-to-r from-cyan-500 to-secondary ">
             <YMaps>
               <Map
-                defaultState={{ center: [41.3028953, 69.3147917], zoom: 15 }}
+                defaultState={{ center: [41.3028953, 69.3147917], zoom: 20 }}
                 width={"101%"}
                 height={"20rem"}
               />

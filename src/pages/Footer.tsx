@@ -21,10 +21,15 @@ const Footer = () => {
               <div className="text-2xl lg:text-xl ">
                 <BiSolidPhoneCall />
               </div>
-              <span>+998 98 100 36 31</span>
+              <a
+                href="tel:+998981003631"
+                className="text-primary text-xl sm:text-base"
+              >
+                +998 98 100 36 31
+              </a>
             </div>
             <div className="flex gap-2 text-primary items-center">
-              <div className="text-2xl lg:text-xl">
+              <div className="text-2xl lg:text-xl  sm:text-base">
                 <AiOutlineGlobal />
               </div>
               <span>cosinus.uz</span>

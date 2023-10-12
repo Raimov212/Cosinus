@@ -13,7 +13,7 @@ const MainTop = () => {
     >
       <div className="flex flex-col flex-1 gap-10 sm:gap-5 lg:pl-8 sm:px-4">
         <div>
-          <div className="sm:hidden">
+          <div className="w-[282px] lg:w-[219px] sm:w-[150px]">
             <LogoTitle />
           </div>
           <h2 className="text-primary text-5xl sm:text-2xl font-bold">
@@ -24,7 +24,7 @@ const MainTop = () => {
           {t("mainTop.description")}
         </span>
         <a href="#call">
-          <button className="bg-secondary p-2 rounded-md text-primary w-64 md:w-64 sm:w-full">
+          <button className="bg-secondary p-2 rounded-md text-primary w-64 md:w-64 sm:w-[180px]">
             {t("mainTop.call")}
           </button>
         </a>
