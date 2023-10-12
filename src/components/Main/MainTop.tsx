@@ -1,35 +1,20 @@
-import Lottie, { InteractivityProps } from "lottie-react";
+import Lottie from "lottie-react";
 import animationData from "../../assets/animation/animation.json";
 import { LogoTitle } from "../../assets/logo/LogoTitle";
-import { LogoTitleMobile } from "../../assets/logo/LogoTitleMobile";
 import { useTranslation } from "react-i18next";
 
 const MainTop = () => {
-  const interactivity: Omit<InteractivityProps, "lottieObj"> = {
-    mode: "scroll",
-    actions: [
-      {
-        visibility: [0.15, 1.0],
-        type: "loop",
-        frames: [5, 260],
-      },
-    ],
-  };
-
   const { t } = useTranslation();
 
   return (
     <div
       className="w-full h-full flex lg:flex-col sm:flex-col xl:items-center
-     xl:pl-24 xl:mt-10  "
+     xl:pl-24 xl:mt-10 md:mt-20 md:px-12"
     >
-      <div className="flex flex-col gap-10 sm:gap-5 flex-initial lg:pl-8 sm:px-4">
+      <div className="flex flex-col flex-1 gap-10 sm:gap-5 lg:pl-8 sm:px-4">
         <div>
           <div className="sm:hidden">
             <LogoTitle />
-          </div>
-          <div className="hidden sm:block ">
-            <LogoTitleMobile />
           </div>
           <h2 className="text-primary text-5xl sm:text-2xl font-bold">
             {t("mainTop.title")}
@@ -44,13 +29,8 @@ const MainTop = () => {
           </button>
         </a>
       </div>
-      <div className="w-full h-full">
-        <Lottie
-          animationData={animationData}
-          interactivity={interactivity}
-          action="scroll"
-          className="sm:mt-4"
-        />
+      <div className="w-full h-full flex-1">
+        <Lottie animationData={animationData} loop={true} className="sm:mt-4" />
       </div>
     </div>
   );

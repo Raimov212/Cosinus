@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Logo } from "../assets/logo/Logo";
 import { LogoMobile } from "../assets/logo/LogoMobile";
 import { useTranslation } from "react-i18next";
+import { LogoMobileLine } from "../assets/logo/LogoMobileLine";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -24,38 +25,28 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-10 my-4 xl:px-24 lg:px-4 sm:mb-12 sm:px-4 ">
+    <div className="h-10 my-4 xl:px-24 lg:px-4 sm:mb-12 md:pb-4 md:px-12 sm:px-4 navbar pb-1">
       <div
         className={`${
           open
-            ? "xl:hidden bg-white opacity-30 absolute top-0 left-0 w-full h-full"
+            ? "xl:hidden bg-white opacity-30 absolute top-0 left-0 w-full h-full navbar"
             : null
         }`}
       ></div>
-      <div className="flex justify-between items-center transition-all ease-in-out ">
+      <div
+        className="flex justify-between items-center transition-all ease-in-out 
+     "
+      >
         {open ? (
           <div
-            className="transition-all ease-in-out sm:absolute md:absolute top-0
-                       lg:left-0 sm:right-0 w-[80%] h-full z-50 bg-primary 
-                       py-5 px-4 flex flex-col justify-between xl:hidden"
+            className="transition-all ease-in-out absolute  top-[-20px] mt-2
+            lg:left-0 md:left-0 sm:right-0 w-[80%] bg-primary pb-[50rem]
+            py-5 px-4 flex flex-col justify-between xl:hidden h-full opacity-100"
           >
-            <div className="flex flex-col gap-10 ">
+            <div className="flex flex-col gap-10  bg-primary ">
               <div className="flex items-center justify-between">
                 <LogoMobile />
-                <div
-                  className="bg-gradient-to-r xl:hidden from-[#34B8A3] to-[#1913EA]
-                             p-[0.5px] md:p-[1px] rounded-md md:h-9  h-[15px]"
-                >
-                  <select
-                    defaultValue={language}
-                    onChange={handleLanguageChange}
-                    className="bg-primary w-full text-sm text-primary p-1 md:p-2 rounded-md cursor-pointer"
-                  >
-                    <option value="uz">O'zbek</option>
-                    <option value="ru">Русский</option>
-                    <option value="en">English</option>
-                  </select>
-                </div>
+
                 <div
                   className="xl:hidden w-10 h-10 flex justify-center items-center
                    rounded-md  text-primary text-xl"
@@ -66,14 +57,18 @@ const Navbar = () => {
               </div>
               <ul className="flex flex-col gap-5 text-secondary items-center ">
                 <li className="w-full h-10  bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
-                  <div className="h-full bg-primary rounded-md pl-4  group-hover:bg-secondary pt-[6px]">
-                    <Link to="/">{t("navbar.call")}</Link>
-                  </div>
+                  <Link to="/">
+                    <div className="h-full bg-primary rounded-md pl-4 group-hover:bg-secondary pt-[6px]">
+                      <p className="">{t("navbar.call")}</p>
+                    </div>
+                  </Link>
                 </li>
                 <li className="w-full h-10 bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
-                  <div className="h-full bg-primary rounded-md pl-4 pt-[6px]  group-hover:bg-secondary">
-                    <a href="#portfolio">Portfolio</a>
-                  </div>
+                  <a href="#portfolio">
+                    <div className="h-full bg-primary rounded-md pl-4 pt-[6px]  group-hover:bg-secondary">
+                      Portfolio
+                    </div>
+                  </a>
                 </li>
                 <li className="w-full h-12 bg-gradient-to-r from-[#34B8A3] group to-[#1913EA] p-[1px] rounded-md">
                   <div className="h-full bg-primary rounded-md pl-4 pt-[10px]  group-hover:bg-secondary">
@@ -82,7 +77,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex gap-6 text-[#3C4BDC] text-3xl sm:text-2xl justify-center">
+            <div className="flex gap-6 text-[#3C4BDC] text-3xl sm:text-2xl justify-center mt-[20rem]">
               <BiLogoTelegram />
               <RiInstagramFill />
               <AiFillYoutube />
@@ -90,7 +85,7 @@ const Navbar = () => {
             </div>
           </div>
         ) : (
-          <div className="xl:hidden w-0 h-full sm:hidden lg:block">
+          <div className="xl:hidden md:hidden w-0 h-full sm:hidden lg:block">
             <div
               className="w-8 h-8 flex justify-center items-center
                           rounded-md bg-secondary text-primary"
@@ -100,12 +95,12 @@ const Navbar = () => {
             </div>
           </div>
         )}
-        <div className="flex gap-10">
-          <div className="mr-32 sm:hidden">
+        <div className="flex gap-10 md:gap-0 lg:justify-between">
+          <div className="mr-32 sm:hidden md:block lg:hidden">
             <Logo />
           </div>
-          <div className="mr-32 hidden sm:block">
-            <LogoMobile />
+          <div className="hidden sm:block lg:block md:hidden">
+            <LogoMobileLine />
           </div>
           <ul className="flex gap-10 text-secondary items-end lg:hidden sm:hidden">
             <li>
@@ -129,33 +124,40 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div
-          className="xl:hidden w-8 h-8 flex justify-center items-center
-         rounded-md bg-secondary text-primary lg:hidden"
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <AiOutlineMenu />
-        </div>
-        <div className="flex gap-5 sm:fixed sm:top-5 sm:right-5">
-          <div className="bg-gradient-to-r xl:block sm:hidden md:hidden from-[#34B8A3] to-[#1913EA] p-[2px] sm:p-[2px] rounded-md  h-10">
-            <select
-              onChange={handleLanguageChange}
-              className="bg-primary w-full  text-primary p-2 rounded-md cursor-pointer"
+        <div className="flex gap-4 items-center md:mt-auto">
+          <div className="flex xl:gap-8 items-center">
+            <div
+              className="bg-gradient-to-r xl:h-full xl:w-full from-[#34B8A3] to-[#1913EA]
+            md:p-[0.8px] sm:p-[1px] rounded-md mr-1"
             >
-              <option value="uz">O'zbek</option>
-              <option value="ru">Русский</option>
-              <option value="en">English</option>
-            </select>
+              <select
+                defaultValue={language}
+                onChange={handleLanguageChange}
+                className="bg-primary w-full text-sm text-primary p-2 sm:p-[6px]
+                 rounded-md cursor-pointer xl:h-10"
+              >
+                <option value="uz">O'zbek</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+            <a href="#call">
+              <button
+                className="bg-secondary flex justify-center lg:hidden xl:py-2 w-40
+              lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block md:h-8"
+              >
+                {t("navbar.call")}
+              </button>
+            </a>
           </div>
-          <a href="#call">
-            <button
-              className={`${
-                open ? "fixed top-5 right-5" : ""
-              } bg-secondary xl:px-6 xl:py-2 lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block`}
-            >
-              {t("navbar.call")}
-            </button>
-          </a>
+
+          <div
+            className="xl:hidden md:hidden w-8 h-8 flex justify-center items-center
+         rounded-md bg-secondary text-primary lg:hidden "
+            onClick={() => setOpen((prev) => !prev)}
+          >
+            <AiOutlineMenu />
+          </div>
         </div>
       </div>
     </div>

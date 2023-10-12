@@ -2,13 +2,7 @@ import { FC, ImgHTMLAttributes } from "react";
 
 const CssFC: FC<ImgHTMLAttributes<HTMLImageElement>> = () => {
   return (
-    <svg
-      width="88"
-      height="100"
-      viewBox="0 0 88 100"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 88 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_567_55)">
         <path
           d="M7.63165 89.5249L0.320007 0.166992L87.64 0.346562L79.9087 89.5249L44.3096 99.8329L7.63165 89.5249Z"

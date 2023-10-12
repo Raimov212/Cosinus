@@ -2,93 +2,97 @@
   "translation": {
     "navbar": {
       "list": {
-        "one": "Bosh sahifa",
+        "one": "Homepage",
         "two": "Portfolio",
         "three": "Cosinus academy",
-        "new": "Yangi"
+        "new": "New"
       },
-      "call": "Bog'lanish"
+      "call": "Communication"
     },
     "mainTop": {
-      "title": "IT - kompaniyasi",
-      "description": "Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.",
-      "call": "Bog'lanish"
+      "title": "IT company",
+      "description": "Based on the needs of customers, we offer services.",
+      "call": "Contact"
     },
     "mainBottom": {
-      "title": "Bizning Jamoa",
-      "description": "Jamoa o'z sohasining ustasi bo'lgan mutahasislardan yig'ilgan. Jamoamizning har bir a'zosi loyihangizni muvafaqqiyatga yetaklaydi.",
-      "work": "Muvaffaqiyatli topshirgan ishlarimiz"
+      "title": "Our team",
+      "description": "The team is made up of professionals who are masters of their craft. Every member of our team will lead your project to success",
+      "work": "The work we have successfully completed"
     },
     "services": {
-      "title": "Bizning xizmatlarimiz",
-      "description": "Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.",
+      "title": "Our services",
+      "description": "Based on the needs of customers, we offer services.",
       "service": {
         "oneTitle": "IT",
-        "oneDescription": "Mobile progmmalar, veb saytlardan tortib CRM sistemasini tizimlashtirishgacha bo'lgan sifatli xizmatlar",
-        "two": "Veb sayt",
-        "twoDescription": "Sayt dizaynini loyihalash, funksionalligini oshirish, brauzerlarda to'g'ri ishlashini taminlash va shu qator vazifalarni o'z ichiga oladi",
-        "three": "Ta'lim",
-        "threeDescription": "MIT ni mutaxasislardan o'rganing. Uzoq masofadan kelishingiz shart emas, siz shunchaki ro'yhatdan o'ting, biz oldingizga borib ilm ulashamiz",
-        "four": "Cyber sport",
-        "fourDescription": "Ommabop va adrinalinga boy bo'lgan musobaqalar"
+        "oneDescription": "Mobile programs, quality services from websites to CRM systematization",
+        "two": "Website",
+        "twoDescription": "Website design development, improving its functionality, ensuring proper operation in browsers and includes a number of tasks",
+        "three": "Education",
+        "threeDescription": "Learn MIT from experts. You don't need to come from far away, just register, we will go to you and share the science",
+        "four": "Cyber Sport",
+        "fourDescription": "Popular and Adrenalin-rich competitions"
       }
     },
     "technology": {
-      "title": "Loyihangizni muammosiz bajarish uchun eng yangi texnologiyalardan foydalanamiz",
-      "description": "Biz bilan zamon bilan hamnafas bo'ling",
-      "frontend": "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!"
+      "title": "We use the latest technologies to ensure the smooth operation of your project",
+      "description": "Keep up with the times",
+      "frontend": "Web applications are the best way to create an MVP. And this is our stack to build it!",
+      "backend": "We use these technologies to increase project speed, ensure security and increase functionality",
+      "mobile": "We use the best technologies created by Google and Apple to create mobile applications!",
+      "design": "We provide great looking designs for your site and app interface!"
     },
     "portfolio": {
       "title": "PORTFOLIO",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
-      "designName": "Cosimus IT-konpaniyasi uchun veb-sayt dizayni",
-      "button": "Barchasini ochish"
+      "description": "IT outsourcing companies offer various services adapted to the needs of their customers.",
+      "designName": "Website for cosinus IT company",
+      "designNam2": "A website for a textile company",
+      "button": "Open all"
     },
     "workCategory": {
-      "title": "Biz qanday ishlaymiz",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
+      "title": "How we work",
+      "description": "IT outsourcing companies offer various services adapted to the needs of their customers.",
       "one": {
-        "categoryTitle": "Tahlil va g'oya",
-        "description": "Ushbu bo'limda raqobatchilar tahlil qilinadi, bozor o'rganiladi. Va proektning dastlabki g'oylari paydo bo'ladi"
+        "categoryTitle": "Analysis and idea",
+        "description": "This section analyzes competitors, the market is being investigated. And the first ideas of the project appear"
       },
       "two": {
-        "categoryTitle": "Auditoriya",
-        "description": "Maqsadli auditoriya tanlanadi, talablari o'rganilib, ularning ehtiyoji aniqlanadi"
+        "categoryTitle": "Audience",
+        "description": "The target audience is selected, requirements are studied, their need is determined"
       },
       "three": {
-        "categoryTitle": "Strategiya",
-        "description": "Qilinishi kerak bo'lgan ishlar aniqlanadi, ularning ketma-ketiligi tuzib olinadi yani reja tuziladi"
+        "categoryTitle": "Strategy",
+        "description": "The works to be performed are determined, their sequence is drawn up, i.e. a plan is drawn up"
       },
       "four": {
-        "categoryTitle": "Rivojlanish",
-        "description": "Reja asosida qilinishi kerak bo'lgan ishlar qilinadi va proekt muvaqqiyatli tugashi uchun sirli fishkalardan foydalniladi"
+        "categoryTitle": "Development",
+        "description": "What should be done according to the plan will be done, and the mysterious chips will be used to temporarily complete the project"
       },
       "five": {
-        "categoryTitle": "Hamkorlarimiz",
-        "description": "Bizga bildirgan ishonchingiz uchun tashakkur!"
+        "categoryTitle": "Our partners",
+        "description": "Thank you for the trust you have shown us!"
       }
     },
     "company": {
-      "title": "Bizga ishonch bildirgan kompaniyalar:",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi."
+      "title": "Companies that trust us:",
+      "description": "Companies engaged in IT outsourcing offer various services adapted to the needs of their customers."
     },
     "call": {
-      "title": "Biz bilan bo’glanish",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
-      "inputName": "Ismingiz",
-      "inputPlaceholder": "Ismingiz",
-      "email": "Elekrton pochtangiz",
-      "descriptionName": "Label",
-      "locatoin": "Tashkent, Mirzo-Ulugbekskiy tumani, mahalla Shaxriobod",
-      "button": "Xabar yuborish"
+      "title": "The herald is with us",
+      "description": "IT outsourcing companies offer various services adapted to the needs of their customers.",
+      "inputName": "Your name",
+      "inputPlaceholder": "Your name",
+      "email": "Your email",
+      "descriptionName": "Explanation",
+      "location": "Tashkent, Yashnabad district, Mahtumquli street 1A",
+      "button": "Send a message"
     },
     "footer": {
-      "serviceTitle": "Bizning xizmatlarimiz",
-      "serviceWork": "Veb saytlar",
+      "serviceTitle": "Our services",
+      "serviceWork": "Websites",
       "portfolioTitle": "Portfolio",
-      "portfolioWork": "Cosimus IT-konpaniyasi",
-      "callTitle": "Bog‘lanish",
-      "certificat": "© 2023 Cosinus IT. Barcha huquqlar himoyalangan"
+      "portfolioWork": "Cosinus IT company",
+      "callTitle": "Contact : '",
+      "certificat": "Â© 2023 cosinus IT. All rights reserved"
     }
   }
 }

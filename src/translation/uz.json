@@ -1,6 +1,6 @@
 {
   "translation": {
-    "Navbar": {
+    "navbar": {
       "list": {
         "one": "Bosh sahifa",
         "two": "Portfolio",
@@ -16,8 +16,8 @@
     },
     "mainBottom": {
       "title": "Bizning Jamoa",
-      "description": "Jamoa o'z sohasining ustasi bo'lgan mutahasislardan yig'ilgan. Jamoamizning har bir a'zosi loyihangizni muvafaqqiyatga yetaklaydi.",
-      "work": "Muvaffaqiyatli topshirgan ishlarimiz"
+      "description": "Jamoa o'z sohasining ustasi bo'lgan mutaxasislardan yig'ilgan. Jamoamizning har bir a'zosi loyihangizni muvaffaqiyat sari yetaklaydi.",
+      "work": "Muvaffaqiyatli topshirgan loyihalarimiz"
     },
     "services": {
       "title": "Bizning xizmatlarimiz",
@@ -36,12 +36,16 @@
     "technology": {
       "title": "Loyihangizni muammosiz bajarish uchun eng yangi texnologiyalardan foydalanamiz",
       "description": "Biz bilan zamon bilan hamnafas bo'ling",
-      "frontend": "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!"
+      "frontend": "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!",
+      "backend": "Loyiha tezligini kuchaytirish,xavfsizligini taminlash va funksionalligni oshirish uchun manshu texnologiyalardan foydalanamiz",
+      "mobile": "Mobil ilovalarni yaratishda Google va Apple tomonidan yaratilgan eng yaxshi texnologiyalardan foydalanamiz!",
+      "design": "Sayt va ilovalaringiz interfeysi uchun ajoyib ko'rinishdagi dizaynlarni taqdim etamiz!"
     },
     "portfolio": {
       "title": "PORTFOLIO",
       "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
-      "designName": "Cosinus IT-konpaniyasi uchun veb-sayt dizayni",
+      "designName": "Cosinus IT-konpaniyasi uchun veb-sayt ",
+      "designName2": "To'qimachilik korxonasi uchun tayyorlangan veb-sayt",
       "button": "Barchasini ochish"
     },
     "workCategory": {
@@ -73,13 +77,13 @@
       "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi."
     },
     "call": {
-      "title": "Biz bilan bo’glanish",
+      "title": "Biz bilan bog'lanish",
       "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
       "inputName": "Ismingiz",
       "inputPlaceholder": "Ismingiz",
       "email": "Elekrton pochtangiz",
-      "descriptionName": "Label",
-      "locatoin": "Tashkent, Mirzo-Ulugbekskiy tumani, mahalla Shaxriobod",
+      "descriptionName": "Izoh",
+      "location": "Tashkent, Yashnobod tumani, 1A Mahtumquli ",
       "button": "Xabar yuborish"
     },
     "footer": {
@@ -87,8 +91,8 @@
       "serviceWork": "Veb saytlar",
       "portfolioTitle": "Portfolio",
       "portfolioWork": "Cosinus IT-konpaniyasi",
-      "callTitle": "Bog‘lanish",
-      "certificat": "© 2023 Cosinus IT. Barcha huquqlar himoyalangan"
+      "callTitle": "Bog‘lanish : ",
+      "certificate": "© 2023 Cosinus IT. Barcha huquqlar himoyalangan"
     }
   }
 }

@@ -1,10 +1,30 @@
 import { useState } from "react";
-import CssFC from "../assets/technology/Css";
-import Html from "../assets/technology/Html";
-import Javascript from "../assets/technology/Javscript";
-import ReactTS from "../assets/technology/React";
-import Sass from "../assets/technology/Sass";
-import VueJS from "../assets/technology/Vue";
+//Frontend
+import CssFC from "../assets/technology/frontend/Css";
+import Html from "../assets/technology/frontend/Html";
+import Javascript from "../assets/technology/frontend/Javscript";
+import ReactTS from "../assets/technology/frontend/React";
+import Sass from "../assets/technology/frontend/Sass";
+import VueJS from "../assets/technology/frontend/Vue";
+//Flutter
+import Dart from "../assets/technology/flutter/Dart";
+import Firebase from "../assets/technology/flutter/Firebase";
+import Flutter from "../assets/technology/flutter/Flutter";
+import Swift from "../assets/technology/flutter/Swift";
+//Flutter
+import Figma from "../assets/technology/designer/Figma";
+import Illustrator from "../assets/technology/designer/Illustrator";
+import Miro from "../assets/technology/designer/Miro";
+import PhotoShop from "../assets/technology/designer/PhotoShop";
+import Kotlin from "../assets/technology/flutter/Kotlin";
+//Backend
+import Java from "../assets/technology/backend/Javs";
+import Python from "../assets/technology/backend/Python";
+import BackendOne from "../assets/technology/backend/BackendOne";
+import BackendTwo from "../assets/technology/backend/BackendTwo";
+import BackendThree from "../assets/technology/backend/BackendThree";
+import BackendFour from "../assets/technology/backend/BackendFour";
+
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 
@@ -18,8 +38,8 @@ const Technology = () => {
       title: "Frontend",
       description: t("technology.frontend"),
       logo: [
-        <CssFC />,
         <Html />,
+        <CssFC />,
         <Javascript />,
         <ReactTS />,
         <VueJS />,
@@ -30,21 +50,29 @@ const Technology = () => {
       id: "2",
       openGroup: false,
       title: "Backend",
-    },
-    {
-      id: "3",
-      openGroup: false,
-      title: "Devops",
+      description: t("technology.backend"),
+      logo: [
+        <Java />,
+        <Python />,
+        <BackendOne />,
+        <BackendTwo />,
+        <BackendThree />,
+        <BackendFour />,
+      ],
     },
     {
       id: "4",
       openGroup: false,
-      title: "UX/UI",
+      title: "UI/UX",
+      description: t("technology.design"),
+      logo: [<Figma />, <Illustrator />, <Miro />, <PhotoShop />],
     },
     {
       id: "5",
       openGroup: false,
       title: "Mobile",
+      description: t("technology.mobile"),
+      logo: [<Dart />, <Firebase />, <Flutter />, <Swift />, <Kotlin />],
     },
   ];
 
@@ -61,9 +89,9 @@ const Technology = () => {
   };
 
   return (
-    <div className="xl:px-24 lg:px-6 sm:mb-12 sm:px-4">
+    <div className="xl:px-24 lg:px-6 sm:mb-12 sm:px-4 md:px-12">
       <div className="mt-24 mb-14 sm:mt-0 sm:mb-8">
-        <div className="text-6xl lg:text-4xl sm:text-xl text-primary mb-6 sm:mb-2 ">
+        <div className="text-6xl md:text-4xl lg:text-4xl sm:text-xl text-primary mb-6 sm:mb-2 ">
           {t("technology.title")}
         </div>
         <div className="text-2xl sm:text-[12px] text-secondary ">
@@ -75,7 +103,8 @@ const Technology = () => {
           return (
             <div
               key={item.id}
-              className="bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[1px] sm:p-[1.7px] rounded-2xl sm:rounded-lg"
+              className="bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[1px] sm:p-[1.7px]
+               rounded-2xl sm:rounded-lg"
               onClick={() => handleOpenFC(item.id)}
             >
               <>
@@ -85,11 +114,11 @@ const Technology = () => {
                    rounded-2xl sm:rounded-lg transition-all ease-in-out"
                   >
                     <div className="flex justify-between items-center ">
-                      <div className="text-3xl font-bold sm:text-xl text-primary ">
+                      <div className="text-3xl md:xl font-bold sm:text-xl text-primary ">
                         {item.title}
                       </div>
                       <div className="text-primary text-2xl sm:text-xl flex">
-                        <BsChevronDown />
+                        <BsChevronUp />
                       </div>
                     </div>
                     <div className=" transition-all ease-in ">
@@ -97,12 +126,12 @@ const Technology = () => {
                         {item?.description}
                       </div>
                       <div className="flex transition-all ease-in-out gap-6">
-                        {item.logo?.map((item, index) => (
+                        {item.logo?.map((lg, index) => (
                           <div
                             key={index}
-                            className="xl:w-24 xl:h-24 lg:w-16 lg:h-16 sm:w-7 sm:h-7 flex"
+                            className="xl:w-24 xl:h-24 md:w-20 md:h-20 lg:w-16 lg:h-16 sm:w-7 sm:h-7 flex"
                           >
-                            {item}
+                            {lg}
                           </div>
                         ))}
                       </div>
@@ -115,7 +144,7 @@ const Technology = () => {
                         {item.title}
                       </div>
                       <div className="text-primary text-2xl sm:text-xl">
-                        <BsChevronUp />
+                        <BsChevronDown />
                       </div>
                     </div>
                   </div>

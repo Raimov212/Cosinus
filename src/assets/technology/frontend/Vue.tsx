@@ -2,13 +2,7 @@ import { FC, ImgHTMLAttributes } from "react";
 
 const Vue: FC<ImgHTMLAttributes<HTMLImageElement>> = () => {
   return (
-    <svg
-      width="101"
-      height="100"
-      viewBox="0 0 101 100"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_567_67)">
         <path
           d="M20.5642 7.33838L38.5345 7.34541L50.2814 26.8438L61.9869 7.34697L79.9416 7.34229L50.3712 58.6353L20.5642 7.33838Z"

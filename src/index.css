@@ -42,4 +42,20 @@
 }
 
 @layer utilities {
+  .navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    background: #0e0e37;
+    background: linear-gradient(
+      90deg,
+      rgb(17, 17, 92) 0%,
+      rgb(7, 7, 70) 0%,
+      rgba(2, 0, 36, 1) 100%,
+      rgba(30, 20, 137, 0.881) 50%
+    );
+    z-index: 100;
+    top: -1px;
+    height: 100%;
+    padding-top: 10px;
+  }
 }

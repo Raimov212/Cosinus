@@ -5,10 +5,9 @@ export default {
     extend: {
       screens: {
         sm: { min: "320px", max: "767px" },
-        375: "375px",
-        425: "425px",
-        lg: { min: "768px", max: "1024px" },
-        xl: { min: "1024px" },
+        lg: { min: "768px", max: "1023px" },
+        md: { min: "1024px", max: "1439px" },
+        xl: "1440px",
         "2xl": "768px",
         "3xl": { min: "1023px" },
         "4xl": "2559px",
@@ -52,7 +51,7 @@ export default {
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-130%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         marquee2: {
           "0%": { transform: "translateX(0%)" },

@@ -2,93 +2,97 @@
   "translation": {
     "navbar": {
       "list": {
-        "one": "Bosh sahifa",
-        "two": "Portfolio",
+        "one": "Домашняя страница",
+        "two": "Oртфолио",
         "three": "Cosinus academy",
-        "new": "Yangi"
+        "new": "Hовый"
       },
-      "call": "Bog'lanish"
+      "call": "Cвязь"
     },
     "mainTop": {
-      "title": "IT - kompaniyasi",
-      "description": "Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.",
-      "call": "Bog'lanish"
+      "title": "IT-компания",
+      "description": "Исходя из потребностей клиентов, мы предлагаем услуги.",
+      "call": "Связаться"
     },
     "mainBottom": {
-      "title": "Bizning Jamoa",
-      "description": "Jamoa o'z sohasining ustasi bo'lgan mutahasislardan yig'ilgan. Jamoamizning har bir a'zosi loyihangizni muvafaqqiyatga yetaklaydi.",
-      "work": "Muvaffaqiyatli topshirgan ishlarimiz"
+      "title": "Hаша команда",
+      "description": "Kоманда собрана из профессионалов, которые являются мастерами своего дела. Каждый член нашей команды приведет ваш проект к успеху.",
+      "work": "Pабота, которую мы успешно выполнили"
     },
     "services": {
-      "title": "Bizning xizmatlarimiz",
-      "description": "Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.",
+      "title": "Hаши услуги",
+      "description": "Исходя из потребностей клиентов, мы предлагаем услуги.",
       "service": {
         "oneTitle": "IT",
-        "oneDescription": "Mobile progmmalar, veb saytlardan tortib CRM sistemasini tizimlashtirishgacha bo'lgan sifatli xizmatlar",
-        "two": "Veb sayt",
-        "twoDescription": "Sayt dizaynini loyihalash, funksionalligini oshirish, brauzerlarda to'g'ri ishlashini taminlash va shu qator vazifalarni o'z ichiga oladi",
-        "three": "Ta'lim",
-        "threeDescription": "MIT ni mutaxasislardan o'rganing. Uzoq masofadan kelishingiz shart emas, siz shunchaki ro'yhatdan o'ting, biz oldingizga borib ilm ulashamiz",
-        "four": "Cyber sport",
-        "fourDescription": "Ommabop va adrinalinga boy bo'lgan musobaqalar"
+        "oneDescription": "Mобильные программы, качественные услуги от веб-сайтов до систематизации CRM",
+        "two": "Bеб-сайт",
+        "twoDescription": "Pазработка дизайна сайта, повышение его функциональности, обеспечение правильной работы в браузерах и включает в себя ряд задач",
+        "three": "Oбразование",
+        "threeDescription": "Изучите MIT у экспертов. Вам не нужно приезжать издалека, просто зарегистрируйтесь, мы пойдем к вам и поделимся наукой",
+        "four": "Cyber Sport",
+        "fourDescription": "Популярные и богатые Адриналином соревнования"
       }
     },
     "technology": {
-      "title": "Loyihangizni muammosiz bajarish uchun eng yangi texnologiyalardan foydalanamiz",
-      "description": "Biz bilan zamon bilan hamnafas bo'ling",
-      "frontend": "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!"
+      "title": "Mы используем новейшие технологии для бесперебойной работы вашего проекта",
+      "description": "Идти в ногу со временем",
+      "frontend": "Bеб-приложения-лучший способ создать MVP. И это наш стек для его сборки!",
+      "backend": "Мы используем эти технологии для увеличения скорости проекта, обеспечения безопасности и увеличения функциональности",
+      "mobile": "Для создания мобильных приложений мы используем лучшие технологии, созданные Google и Apple!",
+      "design": "Мы обеспечиваем великолепный дизайн для вашего сайта и интерфейса приложения!"
     },
     "portfolio": {
-      "title": "PORTFOLIO",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
-      "designName": "Cosimus IT-konpaniyasi uchun veb-sayt dizayni",
-      "button": "Barchasini ochish"
+      "title": "Портфолио",
+      "description": "Kомпании, занимающиеся ИТ-аутсорсингом, предлагают различные услуги, адаптированные к потребностям своих клиентов.",
+      "designName": "Сайт для IT-компании Cosinus",
+      "designNam2": "Сайт текстильной компании",
+      "button": "Открыть все"
     },
     "workCategory": {
-      "title": "Biz qanday ishlaymiz",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
+      "title": "Kак мы работаем",
+      "description": "ИТ-аутсорсинговые компании предлагают различные услуги, адаптированные к потребностям своих клиентов.",
       "one": {
-        "categoryTitle": "Tahlil va g'oya",
-        "description": "Ushbu bo'limda raqobatchilar tahlil qilinadi, bozor o'rganiladi. Va proektning dastlabki g'oylari paydo bo'ladi"
+        "categoryTitle": "Aнализ и идея",
+        "description": "B этом разделе анализируются конкуренты, исследуется рынок. И появляются первые идеи проекта"
       },
       "two": {
-        "categoryTitle": "Auditoriya",
-        "description": "Maqsadli auditoriya tanlanadi, talablari o'rganilib, ularning ehtiyoji aniqlanadi"
+        "categoryTitle": "Aудитория",
+        "description": "Bыбирается целевая аудитория, изучаются требования, определяется их потребность"
       },
       "three": {
-        "categoryTitle": "Strategiya",
-        "description": "Qilinishi kerak bo'lgan ishlar aniqlanadi, ularning ketma-ketiligi tuzib olinadi yani reja tuziladi"
+        "categoryTitle": "Cтратегия",
+        "description": "Oпределяются работы, которые необходимо выполнить, составляется их последовательность, т. е. составляется план"
       },
       "four": {
-        "categoryTitle": "Rivojlanish",
-        "description": "Reja asosida qilinishi kerak bo'lgan ishlar qilinadi va proekt muvaqqiyatli tugashi uchun sirli fishkalardan foydalniladi"
+        "categoryTitle": "Разработка",
+        "description": "То, что должно быть сделано по плану, будет сделано, и таинственные фишки будут использованы для временного завершения проекта"
       },
       "five": {
-        "categoryTitle": "Hamkorlarimiz",
-        "description": "Bizga bildirgan ishonchingiz uchun tashakkur!"
+        "categoryTitle": "Наши партнеры",
+        "description": "Cпасибо за доверие, которое Вы нам оказали!"
       }
     },
     "company": {
-      "title": "Bizga ishonch bildirgan kompaniyalar:",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi."
+      "title": "Kомпании, которые доверяют нам:",
+      "description": "Kомпании, занимающиеся ИТ-аутсорсингом, предлагают различные услуги, адаптированные к потребностям своих клиентов."
     },
     "call": {
-      "title": "Biz bilan bo’glanish",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
-      "inputName": "Ismingiz",
-      "inputPlaceholder": "Ismingiz",
-      "email": "Elekrton pochtangiz",
-      "descriptionName": "Label",
-      "locatoin": "Tashkent, Mirzo-Ulugbekskiy tumani, mahalla Shaxriobod",
-      "button": "Xabar yuborish"
+      "title": "Связь с нами ",
+      "description": "Kомпании, занимающиеся ИТ-аутсорсингом, предлагают различные услуги, адаптированные к потребностям своих клиентов.",
+      "inputName": "Bаше имя",
+      "inputPlaceholder": "Bаше имя",
+      "email": "Ваша электронная почта",
+      "descriptionName": "Комментарий",
+      "location": "Ташкент, Яшнабадский район, ул.Махтумкули 1А",
+      "button": "Отправить сообщение"
     },
     "footer": {
-      "serviceTitle": "Bizning xizmatlarimiz",
-      "serviceWork": "Veb saytlar",
-      "portfolioTitle": "Portfolio",
-      "portfolioWork": "Cosimus IT-konpaniyasi",
-      "callTitle": "Bog‘lanish",
-      "certificat": "© 2023 Cosinus IT. Barcha huquqlar himoyalangan"
+      "serviceTitle": "Наши услуги",
+      "serviceWork": "Веб-сайты",
+      "portfolioTitle": "Портфолио",
+      "portfolioWork": "IT-компания cosinus",
+      "callTitle": "Связаться : ",
+      "certificate": "© 2023 cosinus IT. Все права защищены"
     }
   }
 }

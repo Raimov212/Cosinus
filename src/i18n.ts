@@ -8,7 +8,7 @@ const getUserFromLocalStorage = () => {
   try {
     return JSON.parse(localStorage.getItem("language") || "");
   } catch (error) {
-    return "ru";
+    return "uz";
   }
 };
 
@@ -16,7 +16,7 @@ i18n.use(initReactI18next).init({
   interpolation: {
     escapeValue: false,
   },
-  fallbackLng: "ru",
+  fallbackLng: "uz",
   resources: {
     uz: { ...uzJSON },
     en: { ...enJSON },
