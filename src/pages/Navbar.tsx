@@ -4,7 +4,7 @@ import { BiLogoTelegram } from "react-icons/bi";
 import { RiInstagramFill } from "react-icons/ri";
 import { CgFacebook } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import { Logo } from "../assets/logo/Logo";
+// import { Logo } from "../assets/logo/Logo";
 import { LogoMobile } from "../assets/logo/LogoMobile";
 import { useTranslation } from "react-i18next";
 import { LogoMobileLine } from "../assets/logo/LogoMobileLine";
@@ -29,7 +29,7 @@ const Navbar = () => {
       <div
         className={`${
           open
-            ? "xl:hidden md:hidden bg-white opacity-30 absolute top-[-30px] left-0 w-full h-[1000px] "
+            ? "xl:hidden md:hidden bg-white opacity-30 absolute top-[-30px] left-0 w-full h-[1200px] "
             : null
         }`}
       ></div>
@@ -39,7 +39,7 @@ const Navbar = () => {
       >
         {open ? (
           <div
-            className="transition-all ease-in-out absolute  top-[-25px] mt-2
+            className="transition-all ease-in-out absolute top-[-25px] mt-2
             lg:left-0 md:left-0 sm:right-0 w-[80%] bg-primary pb-[50rem]
             py-5 px-4 flex flex-col justify-between xl:hidden h-full opacity-100"
           >
@@ -118,13 +118,10 @@ const Navbar = () => {
           </div>
         )}
         <div className="flex gap-10 md:gap-0 lg:justify-between">
-          <div className="mr-32 sm:hidden md:block lg:hidden">
-            <Logo />
-          </div>
-          <div className="hidden sm:block lg:block md:hidden">
+          <div className="xl:w-14 lg:w-12 md:w-12 sm:w-8 md:mr-8">
             <LogoMobileLine />
           </div>
-          <ul className="flex gap-10 text-secondary items-end lg:hidden sm:hidden">
+          <ul className="flex gap-10 text-secondary items-center lg:hidden sm:hidden">
             <li>
               <Link to="/">{t("navbar.list.one")}</Link>
             </li>

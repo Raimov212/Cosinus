@@ -1,9 +1,14 @@
-import Employe01 from "../../assets/employee/ShoxruxCEO.png";
+import Employe01 from "../../assets/employee/Shoxrux aka.png";
 import Employe02 from "../../assets/employee/Jamshid.png";
 import Employe03 from "../../assets/employee/Elbek.png";
 import Employe04 from "../../assets/employee/Muzaffar.png";
 import Employe05 from "../../assets/employee/Zamon.png";
 import Employe06 from "../../assets/employee/Tolib.png";
+import Employe07 from "../../assets/employee/Elyor aka.png";
+import Employe08 from "../../assets/employee/Jasur.png";
+import Employe09 from "../../assets/employee/Laziz.png";
+import "../../index.css";
+
 import { useTranslation } from "react-i18next";
 
 interface EmployeeData {
@@ -46,6 +51,21 @@ const MainBottom = () => {
       title: "Tolib ",
       desc: "SALES MANAGER",
     },
+    {
+      image: Employe07,
+      title: "Elyor Usmanov",
+      desc: "SOFTWARE ENGINEER",
+    },
+    {
+      image: Employe08,
+      title: "Jasurbek Raimov",
+      desc: "SOFTWARE ENGINEER",
+    },
+    {
+      image: Employe09,
+      title: "Laziz Xojiboyev",
+      desc: "KONTENT MAKER",
+    },
   ];
 
   return (
@@ -69,26 +89,28 @@ const MainBottom = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-1 gap-4 overflow-hidden overflow-x-scroll">
+      <div className="flex flex-1 gap-4 overflow-hidden overflow-x-scroll w-300px">
         {data?.map((item, index) => (
-          <div key={index} className="h-full w-full animate-marquee2-infinite">
-            <div
-              className="w-64 h-96 sm:h-[24rem] lg:w-52 sm:w-64 
+          <div key={index} className="h-full w-full">
+            <div className="animate-marquee2-infinite">
+              <div
+                className="w-64 h-96 sm:h-[24rem] lg:w-52 sm:w-64 
                 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]
                   relative rounded-xl overflow-hidden cursor-pointer"
-            >
-              <img
-                src={item.image}
-                className="w-full h-80 rounded-t-lg 
+              >
+                <img
+                  src={item.image}
+                  className="w-full h-80 rounded-t-lg 
                  object-cover transition-all ease-in-out
             "
-              />
-              <div
-                className=" text-primary rounded-b-xl 
+                />
+                <div
+                  className=" text-primary rounded-b-xl 
             bg-secondary  pt-2 px-4 pb-2.5"
-              >
-                <p className="font-medium">{item.title}</p>
-                <p className="font-light text-sm">{item.desc}</p>
+                >
+                  <p className="font-medium">{item.title}</p>
+                  <p className="font-light text-sm">{item.desc}</p>
+                </div>
               </div>
             </div>
           </div>

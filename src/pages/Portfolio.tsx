@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Cosinus from "../assets/portfolio/cosinus.png";
 import Toqimachilik from "../assets/portfolio/toqimachilik.png";
+import { FiArrowUpRight } from "react-icons/fi";
+import { useState } from "react";
 
 interface PortfolioData {
   image: string;
@@ -19,7 +21,45 @@ const Portfolio = () => {
       image: Toqimachilik,
       description: t("portfolio.designName2"),
     },
+    {
+      image: Cosinus,
+      description: t("portfolio.designName"),
+    },
+    {
+      image: Toqimachilik,
+      description: t("portfolio.designName2"),
+    },
+    {
+      image: Cosinus,
+      description: t("portfolio.designName"),
+    },
+    {
+      image: Toqimachilik,
+      description: t("portfolio.designName2"),
+    },
+    {
+      image: Cosinus,
+      description: t("portfolio.designName"),
+    },
+    {
+      image: Toqimachilik,
+      description: t("portfolio.designName2"),
+    },
+    {
+      image: Cosinus,
+      description: t("portfolio.designName"),
+    },
+    {
+      image: Toqimachilik,
+      description: t("portfolio.designName2"),
+    },
   ];
+
+  const [visibleImages, setVisibleImages] = useState(data.slice(0, 2));
+
+  const handleButtonClick = () => {
+    setVisibleImages(data);
+  };
 
   return (
     <div
@@ -36,10 +76,10 @@ const Portfolio = () => {
       </div>
       <div className="grid place-items-center">
         <div
-          className="grid grid-cols-2 place-items-center
+          className="grid grid-cols-2 place-items-center 
              xl:gap-10 lg:gap-6 sm:flex sm:flex-col md:gap-4 sm:gap-4"
         >
-          {data.map((item, index) => (
+          {visibleImages.map((item, index) => (
             <div key={index} className="xl:pb-16 lg:mb-2 w-full h-full">
               <div
                 className="bg-gradient-to-r from-cyan-500 to-blue-500 pt-0.5
@@ -57,12 +97,18 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        {/* <div className="cursor-pointer flex justify-center items-center gap-4 xl:mt-16 text-primary w-72 h-12 sm:w-full sm:h-9 sm:mt-4 bg-secondary">
-          <button>{t("portfolio.button")}</button>
-          <div className="text-xl">
-            <FiArrowUpRight />
+        {visibleImages.length < data.length && (
+          <div
+            className="cursor-pointer flex justify-center items-center gap-4 xl:mt-16 text-primary
+            w-72 h-12 sm:w-full sm:h-9 sm:mt-4 bg-secondary"
+            onClick={handleButtonClick}
+          >
+            <button>{t("portfolio.button")}</button>
+            <div className="text-xl">
+              <FiArrowUpRight />
+            </div>
           </div>
-        </div> */}
+        )}
       </div>
     </div>
   );

@@ -54,8 +54,8 @@ export default {
           "100%": { transform: "translateX(-100%)" },
         },
         marquee2: {
-          "0%": { transform: "translateX(50%)" },
-          "100%": { transform: "translateX(-400%)" },
+          from: { transform: "translateX(50%)" },
+          to: { transform: "translateX(-400%)" },
         },
         infinitescroll: {
           from: { transform: "translateX(0)" },

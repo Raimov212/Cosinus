@@ -11,7 +11,7 @@ const MainTop = () => {
       className="w-full h-full flex lg:flex-col sm:flex-col xl:items-center
      xl:pl-24 xl:mt-10 md:mt-20 md:px-12"
     >
-      <div className="flex flex-col flex-1 gap-10 sm:gap-5 lg:pl-8 sm:px-4">
+      <div className="flex flex-col flex-1 gap-5 sm:gap-5 lg:pl-8 sm:px-4">
         <div>
           <div className="w-[282px] lg:w-[219px] sm:w-[150px]">
             <LogoTitle />
@@ -23,11 +23,11 @@ const MainTop = () => {
         <span className="xl:w-[550px] text-3xl sm:text-base font-sans text-secondary">
           {t("mainTop.description")}
         </span>
-        <a href="#call">
+        {/* <a href="#call">
           <button className="bg-secondary p-2 rounded-md text-primary w-64 md:w-64 sm:w-[180px]">
             {t("mainTop.call")}
           </button>
-        </a>
+        </a> */}
       </div>
       <div className="w-full h-full flex-1">
         <Lottie animationData={animationData} loop={true} className="sm:mt-4" />
