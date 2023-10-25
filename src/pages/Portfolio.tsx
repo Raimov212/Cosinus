@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
-import Cosinus from "../assets/portfolio/cosinus.png";
-import Toqimachilik from "../assets/portfolio/toqimachilik.png";
-import { FiArrowUpRight } from "react-icons/fi";
-import { useState } from "react";
+// import { FiArrowUpRight } from "react-icons/fi";
+// import { useState } from "react";
+import Barbershop from "../assets/portfolio/barbershop.png";
+import Shifo24MobileApp from "../assets/portfolio/shifo24mobile.png";
+import Shifo24WebSite from "../assets/portfolio/shifo24website.png";
+import Dostavka from "../assets/portfolio/dostavka.png";
 
 interface PortfolioData {
   image: string;
@@ -14,56 +16,32 @@ const Portfolio = () => {
 
   const data: PortfolioData[] = [
     {
-      image: Cosinus,
-      description: t("portfolio.designName"),
+      image: Dostavka,
+      description: t("portfolio.designTitle1"),
     },
     {
-      image: Toqimachilik,
-      description: t("portfolio.designName2"),
+      image: Shifo24MobileApp,
+      description: t("portfolio.designTitle2"),
     },
     {
-      image: Cosinus,
-      description: t("portfolio.designName"),
+      image: Shifo24WebSite,
+      description: t("portfolio.designTitle3"),
     },
     {
-      image: Toqimachilik,
-      description: t("portfolio.designName2"),
-    },
-    {
-      image: Cosinus,
-      description: t("portfolio.designName"),
-    },
-    {
-      image: Toqimachilik,
-      description: t("portfolio.designName2"),
-    },
-    {
-      image: Cosinus,
-      description: t("portfolio.designName"),
-    },
-    {
-      image: Toqimachilik,
-      description: t("portfolio.designName2"),
-    },
-    {
-      image: Cosinus,
-      description: t("portfolio.designName"),
-    },
-    {
-      image: Toqimachilik,
-      description: t("portfolio.designName2"),
+      image: Barbershop,
+      description: t("portfolio.designTitle4"),
     },
   ];
 
-  const [visibleImages, setVisibleImages] = useState(data.slice(0, 2));
+  // const [visibleImages, setVisibleImages] = useState(data.slice(0, 2));
 
-  const handleButtonClick = () => {
-    setVisibleImages(data);
-  };
+  // const handleButtonClick = () => {
+  //   setVisibleImages(data);
+  // };
 
   return (
     <div
-      className="xl:px-24 lg:px-6 mb-14 transition-all ease-in sm:mb-12 sm:px-4 md:px-12"
+      className="xl:px-24 lg:px-6 mb-14 transition-all ease-in sm:mb-12 sm:px-4 md:px-12 "
       id="portfolio"
     >
       <div className="mt-24 mb-14 xl:w-[110vh] sm:mt-0 sm:mb-6">
@@ -74,12 +52,13 @@ const Portfolio = () => {
           {t("portfolio.description")}
         </div>
       </div>
-      <div className="grid place-items-center">
+      <div className="grid place-items-center  relative">
+        <div className="absolute z-0 w-[1500px] h-[1500px] rounded-full scale-[.6] bottom-[0%] left-[0%] bg_gradient_portfolio"></div>
         <div
-          className="grid grid-cols-2 place-items-center 
-             xl:gap-10 lg:gap-6 sm:flex sm:flex-col md:gap-4 sm:gap-4"
+          className="grid grid-cols-2 place-items-center z-10
+             xl:gap-16 lg:gap-6 sm:flex sm:flex-col md:gap-4 sm:gap-4"
         >
-          {visibleImages.map((item, index) => (
+          {data.map((item, index) => (
             <div key={index} className="xl:pb-16 lg:mb-2 w-full h-full">
               <div
                 className="bg-gradient-to-r from-cyan-500 to-blue-500 pt-0.5
@@ -97,7 +76,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        {visibleImages.length < data.length && (
+        {/* {visibleImages.length < data.length && (
           <div
             className="cursor-pointer flex justify-center items-center gap-4 xl:mt-16 text-primary
             w-72 h-12 sm:w-full sm:h-9 sm:mt-4 bg-secondary"
@@ -108,7 +87,7 @@ const Portfolio = () => {
               <FiArrowUpRight />
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

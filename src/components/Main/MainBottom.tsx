@@ -1,72 +1,34 @@
-import Employe01 from "../../assets/employee/Shoxrux aka.png";
-import Employe02 from "../../assets/employee/Jamshid.png";
-import Employe03 from "../../assets/employee/Elbek.png";
-import Employe04 from "../../assets/employee/Muzaffar.png";
-import Employe05 from "../../assets/employee/Zamon.png";
-import Employe06 from "../../assets/employee/Tolib.png";
-import Employe07 from "../../assets/employee/Elyor aka.png";
-import Employe08 from "../../assets/employee/Jasur.png";
-import Employe09 from "../../assets/employee/Laziz.png";
 import "../../index.css";
+import { useDraggable } from "react-use-draggable-scroll";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import { useTranslation } from "react-i18next";
+import { MutableRefObject, useRef, useState } from "react";
+import { BsArrowUpCircle } from "react-icons/bs";
+import styled, { css } from "styled-components";
+import { data } from "../../api/dataCompanyEmployeeImage";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
-interface EmployeeData {
-  image?: string;
-  title: string;
-  desc?: string;
-}
+const handleDragStart = (e: any) => e.preventDefault();
+
+const ImageSlider = styled.div<{ $transformImage?: number | undefined }>`
+  transition: 0.5s all ease-in;
+  transform: translateX(
+    ${(props) =>
+      props.$transformImage ? `${props.$transformImage * -270}px` : "0px"}
+  );
+`;
 
 const MainBottom = () => {
   const { t } = useTranslation();
+  const [transformImage, setTransformImage] = useState<number>(0);
+  console.log("transformImage", transformImage);
 
-  const data: EmployeeData[] = [
-    {
-      image: Employe01,
-      title: "Shoxruh Egamov",
-      desc: "CEO",
-    },
-    {
-      image: Employe02,
-      title: "Jamshid Bakhramov",
-      desc: "SOFTWARE ENGINEER ",
-    },
-    {
-      image: Employe03,
-      title: "Elbek Suyunov",
-      desc: "DESIGNER",
-    },
-    {
-      image: Employe04,
-      title: "Muzaffar Saidaxmedov",
-      desc: "SOFTWARE ENGINEER",
-    },
-    {
-      image: Employe05,
-      title: "Zamon Qahorov",
-      desc: "SOFTWARE ENGINEER",
-    },
-    {
-      image: Employe06,
-      title: "Tolib ",
-      desc: "SALES MANAGER",
-    },
-    {
-      image: Employe07,
-      title: "Elyor Usmanov",
-      desc: "SOFTWARE ENGINEER",
-    },
-    {
-      image: Employe08,
-      title: "Jasurbek Raimov",
-      desc: "SOFTWARE ENGINEER",
-    },
-    {
-      image: Employe09,
-      title: "Laziz Xojiboyev",
-      desc: "KONTENT MAKER",
-    },
-  ];
+  const ref = useRef<HTMLDivElement>() as MutableRefObject<HTMLInputElement>;
+  const { events } = useDraggable(ref, {
+    decayRate: 0.95,
+    safeDisplacement: 5,
+  });
 
   return (
     <div
@@ -89,10 +51,19 @@ const MainBottom = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-1 gap-4 overflow-hidden overflow-x-scroll w-300px">
-        {data?.map((item, index) => (
-          <div key={index} className="h-full w-full">
-            <div className="animate-marquee2-infinite">
+      <div className="xl:w-[41%] w-full overflow-hidden">
+        <div
+          className="flex flex-1 gap-4 overflow-hidden overflow-x-scroll w-full"
+          {...events}
+          ref={ref}
+        >
+          {data?.map((item, index) => (
+            <ImageSlider
+              $transformImage={transformImage}
+              key={index}
+              className="h-full w-full animate-marquee2-infinite"
+              onDrag={handleDragStart}
+            >
               <div
                 className="w-64 h-96 sm:h-[24rem] lg:w-52 sm:w-64 
                 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]
@@ -105,17 +76,63 @@ const MainBottom = () => {
             "
                 />
                 <div
-                  className=" text-primary rounded-b-xl 
-            bg-secondary  pt-2 px-4 pb-2.5"
+                  className="text-primary rounded-b-xl 
+            bg-secondary pt-2 px-4 pb-[5px]"
                 >
-                  <p className="font-medium">{item.title}</p>
+                  <p className="font-medium text-lg">{item.title}</p>
                   <p className="font-light text-sm">{item.desc}</p>
                 </div>
               </div>
+            </ImageSlider>
+          ))}
+        </div>
+        <div className="flex gap-4 mt-4 ml-8 justify-end ">
+          <button
+            onClick={() =>
+              setTransformImage((prev) => (prev === 0 ? prev : prev - 1))
+            }
+            className=" border-1
+            bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[0.8px]
+              relative rounded-sm"
+          >
+            <div
+              className={` ${
+                transformImage == 0 ? "bg-primary " : "bg-secondary"
+              }  flex items-center justify-center text-white rounded-sm w-8 h-8  `}
+            >
+              <FaChevronLeft />
             </div>
-          </div>
-        ))}
+          </button>
+          <button
+            onClick={() =>
+              setTransformImage((prev) =>
+                prev === data.length - 2 ? prev : prev + 1
+              )
+            }
+            className="border-1 
+            bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[0.8px]
+              relative rounded-sm "
+          >
+            <div
+              className={`${
+                transformImage == data.length - 2
+                  ? "bg-primary "
+                  : "bg-secondary"
+              } flex items-center justify-center text-white rounded-sm w-8 h-8 `}
+            >
+              <FaChevronRight />
+            </div>
+          </button>
+        </div>
       </div>
+      <a href="#main">
+        <div
+          className="fixed bottom-10 z-50 right-10 text-4xl text-[#3C4BDC] cursor-pointer 
+          hover:transition duration-0 hover:scale-125 hover:duration-300 ease-in-out"
+        >
+          <BsArrowUpCircle />
+        </div>
+      </a>
     </div>
   );
 };

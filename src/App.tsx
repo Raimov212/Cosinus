@@ -7,15 +7,29 @@ import Service from "./pages/Service";
 import Technology from "./pages/Technology";
 import WorkCategory from "./pages/WorkCategory";
 import HeaderComponent from "./components/Header/HeaderComponent";
+import { Suspense, lazy } from "react";
+import LoadingPage from "./components/Lazy/LoadingPAge";
+
+const HeaderComponentLazy = lazy(
+  () => import("./components/Header/HeaderComponent")
+);
 
 function App() {
   return (
     <BrowserRouter>
       <div className="h-full w-full 4xl:px-96 p-0 m-0 ">
         <Navbar />
-        <div className="overflow-hidden h-full">
+        <div className="h-full transition-all ease-in-out">
           <Routes>
-            <Route path="/" index element={<HeaderComponent />} />
+            <Route
+              path="/"
+              index
+              element={
+                // <Suspense fallback={<LoadingPage />}>
+                <HeaderComponentLazy />
+                // </Suspense>
+              }
+            />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/location" element={<Location />} />
             <Route path="/Service" element={<Service />} />

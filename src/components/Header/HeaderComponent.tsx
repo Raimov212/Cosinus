@@ -8,7 +8,7 @@ import WorkCategory from "../../pages/WorkCategory";
 
 const HeaderComponent = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Header>
         <Main />
         <Service />
@@ -17,7 +17,7 @@ const HeaderComponent = () => {
         <WorkCategory />
         <Location />
       </Header>
-    </>
+    </div>
   );
 };
 

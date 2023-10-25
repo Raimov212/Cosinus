@@ -22,10 +22,11 @@ const Navbar = () => {
     changeLanguage(language);
     const storageLanguage = JSON.stringify(language);
     localStorage.setItem("language", storageLanguage);
+    window.location.reload();
   };
 
   return (
-    <div className="h-10 my-4 xl:px-24 lg:px-4 sm:mb-12 md:pb-4 md:px-12 sm:px-4 navbar pb-1">
+    <div className="h-10 xl:px-24 lg:px-4 sm:mb-12 md:pb-4 md:px-12 sm:px-4 navbar bg-none z-50">
       <div
         className={`${
           open
@@ -43,7 +44,7 @@ const Navbar = () => {
             lg:left-0 md:left-0 sm:right-0 w-[80%] bg-primary pb-[50rem]
             py-5 px-4 flex flex-col justify-between xl:hidden h-full opacity-100"
           >
-            <div className="flex flex-col gap-10  bg-primary ">
+            <div className="flex flex-col gap-10  bg-primary">
               <div className="flex items-center justify-between">
                 <LogoMobile />
 
@@ -117,11 +118,11 @@ const Navbar = () => {
             </div>
           </div>
         )}
-        <div className="flex gap-10 md:gap-0 lg:justify-between">
+        <div className="flex gap-10 md:gap-0 lg:justify-between z-10">
           <div className="xl:w-14 lg:w-12 md:w-12 sm:w-8 md:mr-8">
             <LogoMobileLine />
           </div>
-          <ul className="flex gap-10 text-secondary items-center lg:hidden sm:hidden">
+          <ul className="flex gap-10 text-secondary items-center lg:hidden sm:hidden z-10">
             <li>
               <Link to="/">{t("navbar.list.one")}</Link>
             </li>
@@ -144,7 +145,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex gap-4 items-center md:mt-auto">
-          <div className="flex xl:gap-8 items-center">
+          <div className="flex xl:gap-8 items-center ">
             <div
               className="bg-gradient-to-r xl:h-full xl:w-full from-[#34B8A3] to-[#1913EA]
             md:p-[0.8px] p-[1px]  rounded-md mr-1"
@@ -163,13 +164,12 @@ const Navbar = () => {
             <a href="#call">
               <button
                 className="bg-secondary flex justify-center lg:hidden xl:py-2 w-40
-              lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block md:h-8"
+              lg:p-4 lg:py-1 rounded-md text-primary sm:hidden md:block md:h-8 z-20"
               >
                 {t("navbar.call")}
               </button>
             </a>
           </div>
-
           <div
             className="xl:hidden md:hidden w-8 h-8 flex justify-center items-center
          rounded-md bg-secondary text-primary lg:hidden "

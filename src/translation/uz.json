@@ -22,51 +22,81 @@
     },
     "services": {
       "title": "Bizning xizmatlarimiz",
-      "description": "Mijozlar ehtiyojidan kelib chiqqan holda, xizmatlar taklif qilamiz.",
+      "description": "Mijozlarning ehtiyojidan kelib chiqqan holda, quyidagi xizmatlarni taklif qilamiz.",
       "service": {
-        "oneTitle": "IT",
-        "oneDescription": "Mobile progmmalar, veb saytlardan tortib CRM sistemasini tizimlashtirishgacha bo'lgan sifatli xizmatlar",
+        "one": "IT",
+        "oneDescription": "Mobil programmalar, veb saytlardan tortib CRM sistemasini tizimlashtirishgacha boʻlgan sifatli xizmatlar",
         "two": "Veb sayt",
-        "twoDescription": "Sayt dizaynini loyihalash, funksionalligini oshirish, brauzerlarda to'g'ri ishlashini taminlash va shu qator vazifalarni o'z ichiga oladi",
+        "twoDescription": "Sayt dizaynini loyihalash, funksionalligini oshirish, brauzerlarda toʻgʻri ishlashini taʼminlash va shu kabi bir qator vazifalarni oʻz ichiga oladi",
         "three": "Ta'lim",
-        "threeDescription": "MIT ni mutaxasislardan o'rganing. Uzoq masofadan kelishingiz shart emas, siz shunchaki ro'yhatdan o'ting, biz oldingizga borib ilm ulashamiz",
+        "threeDescription": "MIT ning mutaxassislaridan o'rganing. Uzoq masofadan kelishingiz shart emas, siz shunchaki roʻyhatdan oʻting va biz oʻzimiz oldingizga borib ilm ulashamiz",
         "four": "Cyber sport",
-        "fourDescription": "Ommabop va adrinalinga boy bo'lgan musobaqalar"
+        "fourDescription": "Ommabop va adrenalinga boy boʻlgan musobaqalar",
+        "five": "Mobil ilova",
+        "fiveDescription": "Mobil ilovalarni ishlab chiqish xizmati smartfon va planshetlar kabi mobil qurilmalar uchun maxsus dasturiy ilovalarni loyihalash, yaratish va joylashtirishni oʻz ichiga oladi",
+        "six": "Dasturiy taʼminot",
+        "sixDescription": "Dasturiy ta'minotni ishlab chiqish xizmati korxonalar yoki jismoniy shaxslarning o'ziga xos ehtiyojlarini qondirish uchun maxsus dasturiy  yechimlarni yaratish va ularga xizmat ko'rsatishni taklif qiladi",
+        "seven": "Auto-Cad",
+        "sevenDescription": "AutoCAD - bu turli sohalardagi mutaxassislar tomonidan aniq va batafsil 2D va 3D modellarni yaratish uchun foydalaniladigan kompyuter yordamida loyihalash dasturi",
+        "eight": "Logo brending",
+        "eightDescription": "Logo brending xizmati - bu mijozlarimizga  ularning brend qadriyatlari, qarashlari va shaxsiyatini aks ettiruvchi noyob va esda qolarli logotip yaratishda yordam beradigan professional va ijodiy xizmatdir",
+        "nine": "3D Max, 3D dizayni va ichki dizayni",
+        "nineDescription": "3D Max, 3D dizayni va ichki dizayni - bu me'moriy ko'rinishdagi makonlarning ajoyib vizual ko'rinishdagi tasvirlarini yaratishga ixtisoslashgan xizmati hisoblanadi",
+        "ten": "Arxitektura",
+        "tenDescription": "Arxitektura xizmatlari bino va inshootlarni loyihalash, rejalashtirish va qurishni o'z ichiga oladi. Arxitektorlar mijozlarning ehtiyojlarini tushunish va funksional, estetik jihatdan yoqimli joylar yaratish uchun ular bilan yaqindan hamkorlik qiladilar",
+        "eleven": "Chizmalar",
+        "elevenDescription": "Bizning chizmachilik xizmatimiz sizning ehtiyojlaringizga moslashtirilgan professional va ijodiy xizmatlarni taklif etadi. Sizga eskizlar, kontseptsiya san'ati yoki batafsil chizmalar kerak bo'ladimi, bizning malakali rassomlarimiz sizning qarashlaringizni jonlantiradi",
+        "twelve": "Motion dizayn",
+        "twelveDescription": "Motion dizayn xizmatlari aloqani yaxshilash va tomoshabinlarni o'ziga jalb qilish uchun dinamik va jozibali vizuallarni yaratishga ixtisoslashgan xizmat turi hisoblanadi",
+        "thirteen": "Kameralarni oʻrnatish",
+        "thirteenDescription": "Bizning kameralarni o'rnatish bo'yicha xizmatimiz korxonalar va uylar uchun professional va ishonchli yechimlarni taklif etadi. Tajribali texnik xodimlarimiz sizning xavfsizlik kameralaringiz toʻgʻri va samarali oʻrnatilishini taʼminlaydi, bu sizga xotirjamlik va yaxshilangan nazoratni beradi",
+        "fourteen": "SMM",
+        "fourteenDescription": "Ijtimoiy tarmoqlar marketingi mahsulot yoki xizmatlarni tanitish uchun turli ijtimoiy media platformalaridan foydalanishni o'z ichiga olgan xizmatdir",
+        "fifteen": "Rebrending",
+        "fifteenDescription": "Rebrending - bu kompaniya yoki mahsulot nomini, logotipini, dizaynini va umumiy imidjini o'zgartirishni o'z ichiga olgan xizmat bo'lib, unga yangi va yangilangan ko'rinishni beradi",
+        "sixteen": "Veb-sayt",
+        "sixteenDescription": "Bizning veb-sayt yaratish xizmatimiz jismoniy shaxslar va korxonalarga ajoyib va samarali veb-saytlar yaratishda yordam berish uchun mo'ljallangan. Tajribali mutaxassislar jamoasi bilan biz maxsus dizaynlar, uzluksiz foydalanuvchi tajribasi va optimallashtirilgan funksionallikni taklif etamiz",
+        "seventeen": "Telegram bot",
+        "seventeenDescription": "Telegram botlarini yaratish xizmatimiz mashhur platformada xabar almashish  va yaxshilash imkoniyatini taqdim etadi. Telegram botlarini yaratish xizmati yordamida samaradorlikni oshirish va obunachilar  bilan muammosiz muloqotga kirishish mumkin boʻladi",
+        "eighteen": "IT sohasida hodimlarning malakasini oshirish",
+        "eighteenDescription": "Bizning IT ko'nikmalarini oshirish xizmatimiz xodimlarga kengaytirilgan texnik bilimlar, o'quv dasturlari va seminarlar bilan ta'minlaydi va bu ularga eng so'nggi texnik amaliyotlaridan xabardor bo'lish va o'z sohalarida ustunlikka erishishga yordam beradi"
       }
     },
     "technology": {
-      "title": "Loyihangizni muammosiz bajarish uchun eng yangi texnologiyalardan foydalanamiz",
-      "description": "Biz bilan zamon bilan hamnafas bo'ling",
-      "frontend": "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va bu uni qurish uchun bizning stekimiz!",
-      "backend": "Loyiha tezligini kuchaytirish, xavfsizligini ta`minlash va funktsionalligini oshirish uchun mana shu texnologiyalardan foydalanamiz",
+      "title": "Loyihangizni muammosiz bajarish uchun eng soʻngi texnologiyalardan foydalanamiz",
+      "description": "Biz bilan birga zamon bilan hamnafas boʻling",
+      "frontend": "Veb-ilovalar MVP yaratishning eng yaxshi usuli hisoblanadi. Va buni qurish uchun bizning steklarimiz!",
+      "backend": "Loyiha tezligini kuchaytirish, xavfsizligini taʼminlash va funksionalligini oshirish uchun quyidagi dasturlash tillaridan foydalanamiz",
       "mobile": "Mobil ilovalarni yaratishda Google va Apple tomonidan yaratilgan eng yaxshi texnologiyalardan foydalanamiz!",
       "design": "Sayt va ilovalaringiz interfeysi uchun ajoyib ko'rinishdagi dizaynlarni taqdim etamiz!"
     },
     "portfolio": {
       "title": "PORTFOLIO",
       "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
-      "designName": "Cosinus IT-konpaniyasi uchun veb-sayt ",
-      "designName2": "To'qimachilik korxonasi uchun tayyorlangan veb-sayt",
+      "designTitle1": "Yetkazib berish xizmati uchun tayyorlangan veb-sayt",
+      "designTitle2": "Shifoxona uchun tayyorlangan Shifo24 mobile dasturi",
+      "designTitle3": "Shifoxona uchun tayyorlangan Shifo24 veb-sayti",
+      "designTitle4": "Barbershop uchun tayyorlangan veb-sayt",
       "button": "Barchasini ochish"
     },
     "workCategory": {
-      "title": "Biz qanday ishlaymiz",
-      "description": "IT-autsorsing kompaniyalari o'z mijozlarining ehtiyojlariga moslashtirilgan turli xizmatlarni taklif qilishadi.",
+      "title": "Biz qanday ishlaymiz-?",
+      "description": "IT-autsorsing kompaniyalari oʻz mijozlarining ehtiyojlaridan kelib chiqqan holda turli xizmatlarni taklif qiladi.",
       "one": {
-        "categoryTitle": "Tahlil va g'oya",
-        "description": "Ushbu bo'limda raqobatchilar tahlil qilinadi, bozor o'rganiladi. Va proektning dastlabki g'oylari paydo bo'ladi"
+        "categoryTitle": "Tahlil va g'oya ",
+        "description": "Ushbu boʻlimda raqobatchilar tahlil qilinadi, bozor oʻrganib chiqiladi. Va proyektning dastlabki g'oyalari shakllantiriladi"
       },
       "two": {
         "categoryTitle": "Auditoriya",
-        "description": "Maqsadli auditoriya tanlanadi, talablari o'rganilib, ularning ehtiyoji aniqlanadi"
+        "description": "Maqsadli auditoriya tanlanadi, talablari oʻrganilib chiqilgach, ularning ehtiyojlari aniqlanadi"
       },
       "three": {
         "categoryTitle": "Strategiya",
-        "description": "Qilinishi kerak bo'lgan ishlar aniqlanadi, ularning ketma-ketiligi tuzib olinadi yani reja tuziladi"
+        "description": "Qilinishi kerak boʻlgan ishlar aniqlanadi, ularning ketma-ketligi tuzib olinadi yaʼni asosiy reja tuziladi"
       },
       "four": {
         "categoryTitle": "Rivojlanish",
-        "description": "Reja asosida qilinishi kerak bo'lgan ishlar qilinadi va proekt muvaqqiyatli tugashi uchun sirli fishkalardan foydalniladi"
+        "description": "Reja asosida bajarilishi kerak boʻlgan ishlar amalga oshiriladi va proyekt muvaffaqiyatli tugashi uchun sirli fishkalardan foydalaniladi"
       },
       "five": {
         "categoryTitle": "Hamkorlarimiz",

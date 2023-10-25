@@ -91,10 +91,10 @@ const Technology = () => {
   return (
     <div className="xl:px-24 lg:px-6 sm:mb-12 sm:px-4 md:px-12">
       <div className="mt-24 mb-14 sm:mt-0 sm:mb-8">
-        <div className="text-6xl md:text-4xl lg:text-4xl sm:text-xl text-primary mb-6 sm:mb-2 ">
+        <div className="text-6xl md:text-4xl lg:text-4xl scale-[1.01] sm:text-xl text-primary mb-6 sm:mb-2 ">
           {t("technology.title")}
         </div>
-        <div className="text-2xl sm:text-[12px] text-secondary ">
+        <div className="text-2xl sm:text-[12px] text-secondary scale-[1.01]">
           {t("technology.description")}
         </div>
       </div>

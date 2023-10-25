@@ -3,7 +3,7 @@ import MainBottom from "../components/Main/MainBottom";
 
 const Main = () => {
   return (
-    <div id="main" className="transition-all ease-in">
+    <div id="main" className="transition-all ease-in ">
       <MainTop />
       <MainBottom />
     </div>

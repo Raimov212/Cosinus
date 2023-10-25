@@ -44,7 +44,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/profile.php?id=61552070373660&mibextid=LQQJ4d">
                 <CgFacebook />
               </a>
-              <a href="">
+              <a href="https://youtube.com/@cosinus_uz?si=iGovnDlbalbTBhLL">
                 <AiFillYoutube />
               </a>
             </div>

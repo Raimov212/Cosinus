@@ -38,11 +38,19 @@ const WorkCategory = () => {
 
   return (
     <div
-      className="xl:px-24 lg:px-6 pb-14 bg-[#081264] md:px-10 
-    md:relative sm:mb-12 sm:px-4"
+      className="xl:px-24 lg:px-6 pb-14 bg-[rgba(6, 6, 71, 1)] md:px-10 
+    md:relative sm:px-4 relative"
     >
-      <div className="my-14  sm:my-8 xl:w-[110vh]">
-        <div className="xl:text-6xl lg:text-4xl sm:text-2xl md:text-4xl text-primary mb-6 sm:mb-2">
+      <div
+        className="absolute z-0 w-[1200px] h-[500px] rounded-full top-[-20%] 
+      sm:hidden lg:hidden md:hidden  right-[-30%] bg_navbar_gradient"
+      ></div>
+      <div
+        className="absolute z-0 w-[1200px] h-[500px] sm:bottom-[10rem] lg:bottom-[20rem] rounded-full 
+      bottom-[-15rem] left-[-25%] md:right-0 md:bottom-[-10%] bg_gradient_main_left"
+      ></div>
+      <div className="my-14 sm:my-8 xl:w-[110vh]">
+        <div className="xl:text-6xl lg:text-4xl z-20 sm:text-2xl md:text-4xl text-primary mb-6 sm:mb-2">
           {t("workCategory.title")}
         </div>
         <div className="text-2xl text-secondary sm:text-sm ">
@@ -53,12 +61,12 @@ const WorkCategory = () => {
         {data?.map((item, index) => (
           <div
             key={index}
-            className="xl:w-full lg:w-[350px] xl:h-[300px] lg:h-[300px] md:mx-10 md:mb-10
-             bg-gradient-to-r from-cyan-500 to-blue-500 p-[1px] rounded-2xl"
+            className="xl:w-full lg:w-[350px] xl:h-full lg:h-[300px] md:mx-10 md:mb-10
+             bg-gradient-to-r from-cyan-500 to-blue-500 p-[1px] rounded-2xl z-10"
           >
             <div
-              className="w-full h-full flex gap-4 pt-6 md:py-5 sm:py-2 sm:px-2 
-            md:px-5 xl:px-4 bg-[#081264]  p-2 rounded-2xl"
+              className="w-full h-full flex gap-4 md:py-5 sm:py-2 sm:px-2 
+            md:px-5 xl:px-4 bg-[#081264] p-2 rounded-2xl xl:py-6  "
             >
               <div
                 className="w-[4rem] h-14 sm:h-8 sm:w-10 mt-2 bg-secondary grid place-items-center
@@ -70,7 +78,7 @@ const WorkCategory = () => {
                 <p className="text-primary text-4xl md:text-3xl lg:text-3xl sm:text-2xl">
                   {item.title}
                 </p>
-                <span className="text-secondary text-[24px] sm:text-base md:text-xl font-sans">
+                <span className="text-secondary text-[20px] sm:text-base md:text-xl font-sans">
                   {item.description}
                 </span>
               </div>

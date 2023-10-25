@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  width: 100%;
-  height: 100%;
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
   font-family: Roboto;
+}
+
+:root {
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +45,7 @@
   .navbar {
     position: sticky;
     position: -webkit-sticky;
-    background: #0e0e37;
+    /* background: #0e0e37; */
     background: linear-gradient(
       90deg,
       rgb(17, 17, 92) 0%,
@@ -51,9 +53,41 @@
       rgba(2, 0, 36, 1) 100%,
       rgba(30, 20, 137, 0.881) 50%
     );
-    z-index: 100;
     top: -1px;
     height: 100%;
-    padding-top: 10px;
+  }
+  .bg_navbar_gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(115, 59, 156, 1) 0%,
+      rgba(115, 59, 156, 1) 0%,
+      rgba(46, 67, 194, 1) 100%
+    );
+    filter: blur(200px);
+  }
+  .bg_location_left {
+    background: linear-gradient(
+      90deg,
+      rgba(115, 59, 156, 1) 0%,
+      rgba(115, 59, 156, 1) 0%,
+      rgba(46, 67, 194, 1) 100%
+    );
+    filter: blur(300px);
+  }
+  .bg_gradient_main_left {
+    background: rgba(16, 74, 242, 1);
+    filter: blur(230px);
+  }
+  .bg_gradient_location_right {
+    background: rgba(16, 74, 242, 1);
+    filter: blur(300px);
+  }
+  .bg_gradient_main_right {
+    background: rgba(16, 74, 242, 1);
+    /* filter: blur(150px); */
+  }
+  .bg_gradient_portfolio {
+    background: rgba(16, 74, 242, 1);
+    filter: blur(800px);
   }
 }

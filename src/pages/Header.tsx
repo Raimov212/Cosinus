@@ -3,7 +3,7 @@ interface HeaderProps {
 }
 
 const Header = ({ children }: HeaderProps) => {
-  return <div className="w-full flex flex-col gap-10">{children}</div>;
+  return <div className="w-full flex flex-col">{children}</div>;
 };
 
 export default Header;

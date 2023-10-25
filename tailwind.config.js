@@ -54,8 +54,8 @@ export default {
           "100%": { transform: "translateX(-100%)" },
         },
         marquee2: {
-          from: { transform: "translateX(50%)" },
-          to: { transform: "translateX(-400%)" },
+          "0%": { width: "50px" },
+          "100%": { width: "100%" },
         },
         infinitescroll: {
           from: { transform: "translateX(0)" },
@@ -63,11 +63,11 @@ export default {
         },
       },
       animation: {
-        "spin-slow-30": "spin 30s linear infinite",
-        "spin-slow-25": "spin 25s linear infinite",
-        "spin-slow-10": "spin 10s linear infinite",
+        // "spin-slow-30": "spin 30s linear infinite",
+        // "spin-slow-25": "spin 25s linear infinite",
+        // "spin-slow-10": "spin 10s linear infinite",
         "marquee-infinite": "marquee 25s linear infinite",
-        "marquee2-infinite": "marquee2 25s linear infinite",
+        "marquee2-infinite": "marquee2 20s linear",
         "infinite-scroll": "infinitescroll ",
       },
     },

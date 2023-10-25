@@ -2,13 +2,13 @@
   "translation": {
     "navbar": {
       "list": {
-        "one": "Homepage",
+        "one": "Home",
         "two": "Portfolio",
         "three": "Cosinus academy",
         "new": "New",
-        "four": "Connection"
+        "four": "Connection "
       },
-      "call": "Communication"
+      "call": "Contact Us"
     },
     "mainTop": {
       "title": "IT company",
@@ -24,14 +24,42 @@
       "title": "Our services",
       "description": "Based on the needs of customers, we offer services.",
       "service": {
-        "oneTitle": "IT",
+        "one": "IT",
         "oneDescription": "Mobile programs, quality services from websites to CRM systematization",
         "two": "Website",
-        "twoDescription": "Website design development, improving its functionality, ensuring proper operation in browsers and includes a number of tasks",
+        "twoDescription": "This includes designing the site's design, improving its functionality, ensuring it works correctly in browsers, and more",
         "three": "Education",
-        "threeDescription": "Learn MIT from experts. You don't need to come from far away, just register, we will go to you and share the science",
+        "threeDescription": "Learn from the experts at MIT. You don't have to travel far, just sign up and we'll come and teach you",
         "four": "Cyber Sport",
-        "fourDescription": "Popular and Adrenalin-rich competitions"
+        "fourDescription": "Popular and Adrenaline-filled competitions",
+        "five": "Mobile Application",
+        "fiveDescription": "The Mobile Application development service includes the development, creation and deployment of special software applications for mobile devices such as smartphones and tablets",
+        "six": "Software",
+        "sixDescription": "The Software Development service offers to create and maintain customized software solutions to meet the specific needs of enterprises or individuals",
+        "seven": "Auto-Cad",
+        "sevenDescription": "AutoCAD is a computer-aided design software used by professionals in various fields to create accurate and detailed 2D and 3D models",
+        "eight": "Logo branding",
+        "eightDescription": "The Logo Branding Service is a professional and creative service that helps our clients create a unique and memorable logo that reflects their brand values, vision and personality",
+        "nine": "3D Max, 3D design and interior design",
+        "nineDescription": "3D Max, 3D design and interior design is a service that specializes in creating stunning visual images of architectural spaces",
+        "ten": "Architecture",
+        "tenDescription": "Architectural services include the design, planning and construction of buildings and structures. Architects work closely with clients to understand their needs and create functional, aesthetically pleasing spaces.",
+        "eleven": "Drawings",
+        "elevenDescription": "Our drawing services offer professional and creative services tailored to your needs. If you need sketches, concept art or detailed drawings, our qualified artists will enliven your vision",
+        "twelve": "Motion design",
+        "twelveDescription": "Motion design services are a type of service that specializes in creating dynamic and attractive visual effects to improve communication and attract an audience",
+        "thirteen": "Installing cameras",
+        "thirteenDescription": "Our camera installation service offers professional and reliable solutions for businesses and homes. Our experienced technicians will make sure that your CCTV cameras are installed correctly and efficiently, which will provide you with peace of mind and improved control",
+        "fourteen": "SMM",
+        "fourteenDescription": "Social media marketing is a service that involves using various social media platforms to promote products or services",
+        "fifteen": "Rebranding",
+        "fifteenDescription": "Rebranding is a service that involves changing the name of a company or product, logo, design and overall image to give it a new and updated look",
+        "sixteen": "Website",
+        "sixteenDescription": "Our website creation service is designed to help individuals and businesses create stunning and effective websites. With a team of experienced professionals, we offer customized design, seamless user interface and optimized functionality",
+        "seventeen": "Telegram bot",
+        "seventeenDescription": "Our Telegram bot creation service offers the possibility of messaging and improvements on the popular platform. With the help of the Telegram bot creation service, it will be possible to increase efficiency and communicate seamlessly with subscribers",
+        "eighteen": "Professional development of personnel in the field of IT",
+        "eighteenDescription": "Our OT-Skills Development service provides employees with advanced technical knowledge, training programs and seminars, as well as helps them keep abreast of the latest technical practices and excel in their fields"
       }
     },
     "technology": {
@@ -45,8 +73,10 @@
     "portfolio": {
       "title": "PORTFOLIO",
       "description": "IT outsourcing companies offer various services adapted to the needs of their customers.",
-      "designName": "Website for cosinus IT company",
-      "designNam2": "A website for a textile company",
+      "designTitle1": "Website designed for delivery service",
+      "designTitle2": "Shifo24 mobile program prepared for the hospital",
+      "designTitle3": "Shifo24 website designed for the hospital",
+      "designTitle4": "Website made for barbershop",
       "button": "Open all"
     },
     "workCategory": {
