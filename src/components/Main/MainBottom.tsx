@@ -3,20 +3,74 @@ import { useDraggable } from "react-use-draggable-scroll";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 import { useTranslation } from "react-i18next";
-import { MutableRefObject, useRef, useState } from "react";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 import { BsArrowUpCircle } from "react-icons/bs";
 import styled, { css } from "styled-components";
-import { data } from "../../api/dataCompanyEmployeeImage";
+import { data } from "../../data/dataCompanyEmployeeImage";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { devices } from "../../assets/screen/screen";
 
 const handleDragStart = (e: any) => e.preventDefault();
 
 const ImageSlider = styled.div<{ $transformImage?: number | undefined }>`
   transition: 0.5s all ease-in;
-  transform: translateX(
-    ${(props) =>
-      props.$transformImage ? `${props.$transformImage * -270}px` : "0px"}
-  );
+  @media ${devices?.mobileS} {
+    transform: translateX(
+      ${(props) =>
+        props.$transformImage ? `${props.$transformImage * -115}%` : "0px"}
+    );
+  }
+  @media ${devices?.mobileM} {
+    transform: translateX(
+      ${(props) =>
+        props.$transformImage ? `${props.$transformImage * -110}%` : "0px"}
+    );
+  }
+  @media ${devices?.mobileL} {
+    transform: translateX(
+      ${(props) =>
+        props.$transformImage ? `${props.$transformImage * -105}%` : "0px"}
+    );
+  }
+  @media ${devices?.tablet} {
+    transform: translateX(
+      ${(props) =>
+        props.$transformImage ? `${props.$transformImage * -90}%` : "0px"}
+    );
+  }
+  @media ${devices?.laptop} {
+    transform: translateX(
+      ${(props) =>
+        props.$transformImage ? `${props.$transformImage * -85}%` : "0px"}
+    );
+  }
+  @media ${devices?.laptopL} {
+    transform: translateX(
+      ${(props) =>
+        props.$transformImage ? `${props.$transformImage * -100}%` : "0px"}
+    );
+    /* animation: scrollImage 8s ease-in infinite;
+    @keyframes scrollImage {
+      from {
+        transform: translateX(
+          ${(props) =>
+      props.$transformImage ? `${props.$transformImage * -100}%` : "0px"}
+        );
+      }
+      to {
+        transform: translateX(
+          ${(props) =>
+      props.$transformImage ? `${(props.$transformImage + 1) * -100}%` : "0px"}
+        );
+      }
+    } */
+  }
+  @media ${devices?.desktop} {
+    transform: translateX(
+      ${(props) =>
+        props.$transformImage ? `${props.$transformImage * -90}%` : "0px"}
+    );
+  }
 `;
 
 const MainBottom = () => {
@@ -24,16 +78,27 @@ const MainBottom = () => {
   const [transformImage, setTransformImage] = useState<number>(0);
   console.log("transformImage", transformImage);
 
-  const ref = useRef<HTMLDivElement>() as MutableRefObject<HTMLInputElement>;
-  const { events } = useDraggable(ref, {
-    decayRate: 0.95,
-    safeDisplacement: 5,
-  });
+  // const ref = useRef<HTMLDivElement>() as MutableRefObject<HTMLInputElement>;
+  // const { events } = useDraggable(ref, {
+  //   decayRate: 0.95,
+  //   safeDisplacement: 5,
+  // });
+
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      if (transformImage === data.length - 2) {
+        setTransformImage(0);
+      } else {
+        setTransformImage(transformImage + 1);
+      }
+    }, 5000);
+    return () => clearTimeout(timeOut);
+  }, [transformImage]);
 
   return (
     <div
       className="w-full h-full xl:flex justify-between xl:px-24 xl:mt-10
-     lg:px-8 mb-48 sm:mb-12 sm:px-4 overflow-hidden md:px-12"
+     lg:px-8 mb-48 sm:mb-12 sm:px-4 overflow-hidden md:px-12  "
     >
       <div className="w-full flex flex-1 flex-col gap-10 sm:gap-2 lg:mb-10 sm:mb-10">
         <div className="xl:w-[500px]">
@@ -51,23 +116,21 @@ const MainBottom = () => {
           </p>
         </div>
       </div>
-      <div className="xl:w-[41%] w-full overflow-hidden">
-        <div
-          className="flex flex-1 gap-4 overflow-hidden overflow-x-scroll w-full"
-          {...events}
-          ref={ref}
-        >
-          {data?.map((item, index) => (
+      <div className="flex-1 w-full overflow-hidden relative top-0 right-0 z-10">
+        <div className="flex flex-1 gap-4 overflow-hidden w-full">
+          {data?.map((item) => (
             <ImageSlider
               $transformImage={transformImage}
-              key={index}
+              key={item.id}
               className="h-full w-full animate-marquee2-infinite"
               onDrag={handleDragStart}
             >
+              {/* ${item?.id === transformImage + 1 ? "sm:w-44" : "sm:w-32"} ' */}
               <div
-                className="w-64 h-96 sm:h-[24rem] lg:w-52 sm:w-64 
-                bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]
-                  relative rounded-xl overflow-hidden cursor-pointer"
+                className={`w-64 h-96 sm:w-40 
+                 lg:w-52  
+                 bg-gradient-to-r from-[#34B8A3] to-[#1913EA] p-[2px]
+                  relative rounded-xl overflow-hidden cursor-pointer`}
               >
                 <img
                   src={item.image}
@@ -77,10 +140,12 @@ const MainBottom = () => {
                 />
                 <div
                   className="text-primary rounded-b-xl 
-            bg-secondary pt-2 px-4 pb-[5px]"
+            bg-secondary pt-2 px-4 pb-[5px] sm:pb-[8px]"
                 >
-                  <p className="font-medium text-lg">{item.title}</p>
-                  <p className="font-light text-sm">{item.desc}</p>
+                  <p className="font-medium text-lg sm:text-base">
+                    {item.title}
+                  </p>
+                  <p className="font-light text-sm sm:text-xs">{item.desc}</p>
                 </div>
               </div>
             </ImageSlider>
@@ -106,7 +171,7 @@ const MainBottom = () => {
           <button
             onClick={() =>
               setTransformImage((prev) =>
-                prev === data.length - 2 ? prev : prev + 1
+                prev === data.length - 2 ? 0 : prev + 1
               )
             }
             className="border-1 

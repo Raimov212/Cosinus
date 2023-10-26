@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import getDataServiceComponent from "../api/dataService";
+import getDataServiceComponent from "../data/dataService";
 import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
